@@ -1,0 +1,199 @@
+div.animation {
+  width: 100%;
+  height: 100vh;
+  background-color: #e08958;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.animationEnd {
+  transition: all 1s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Animated Letters: Ramon Liao */
+#first {
+  stroke-dasharray: 505px;
+  stroke-dashoffset: 505px;
+  animation: fadeInside 0.6s ease-in forwards;
+}
+
+#second {
+  stroke-dasharray: 404px;
+  stroke-dashoffset: 404px;
+  animation: fadeInside 0.6s ease-in forwards 0.3s;
+}
+
+#third {
+  stroke-dasharray: 560px;
+  stroke-dashoffset: 560px;
+  animation: fadeInside 0.6s ease-in forwards 0.6s;
+}
+
+#fourth {
+  stroke-dasharray: 359px;
+  stroke-dashoffset: 359px;
+  animation: fadeInside 0.6s ease-in forwards 0.9s;
+}
+
+#fifth {
+  stroke-dasharray: 371px;
+  stroke-dashoffset: 371px;
+  animation: fadeInside 0.6s ease-in forwards 1.2s;
+}
+
+#sixth {
+  stroke-dasharray: 308px;
+  stroke-dashoffset: 308px;
+  animation: fadeInside 0.6s ease-in forwards 1.5s;
+}
+
+#seventh {
+  stroke-dasharray: 239px;
+  stroke-dashoffset: 239px;
+  animation: fadeInside 0.6s ease-in forwards 1.8s;
+}
+
+#eighth {
+  stroke-dasharray: 404px;
+  stroke-dashoffset: 404px;
+  animation: fadeInside 0.6s ease-in forwards 2.1s;
+}
+
+#ninth {
+  stroke-dasharray: 359px;
+  stroke-dashoffset: 359px;
+  animation: fadeInside 0.6s ease-in forwards 2.4s;
+}
+
+/* Animated Letters: Front-End Engineer */
+#seventeenth {
+  stroke-dasharray: 390px;
+  stroke-dashoffset: 390px;
+  animation: fadeInside 0.6s ease-in forwards;
+}
+
+#eighteenth {
+  stroke-dasharray: 233px;
+  stroke-dashoffset: 233px;
+  animation: fadeInside 0.6s ease-in forwards 0.15s;
+}
+
+#nineteenth {
+  stroke-dasharray: 359px;
+  stroke-dashoffset: 359px;
+  animation: fadeInside 0.6s ease-in forwards 0.3s;
+}
+
+#twentyth {
+  stroke-dasharray: 371px;
+  stroke-dashoffset: 371px;
+  animation: fadeInside 0.6s ease-in forwards 0.45s;
+}
+
+#twentyFirst {
+  stroke-dasharray: 279px;
+  stroke-dashoffset: 279px;
+  animation: fadeInside 0.6s ease-in forwards 0.6s;
+}
+
+#twentySecond {
+  stroke-dasharray: 119px;
+  stroke-dashoffset: 119px;
+  animation: fadeInside 0.6s ease-in forwards 0.75s;
+}
+
+#twentyThird {
+  stroke-dasharray: 413px;
+  stroke-dashoffset: 413px;
+  animation: fadeInside 0.6s ease-in forwards 0.9s;
+}
+
+#twentyFourth {
+  stroke-dasharray: 371px;
+  stroke-dashoffset: 371px;
+  animation: fadeInside 0.6s ease-in forwards 1.05s;
+}
+
+#twentyFifth {
+  stroke-dasharray: 446px;
+  stroke-dashoffset: 446px;
+  animation: fadeInside 0.6s ease-in forwards 1.2s;
+}
+
+#twentySixth {
+  stroke-dasharray: 483px;
+  stroke-dashoffset: 483px;
+  animation: fadeInside 0.6s ease-in forwards 1.35s;
+}
+
+#twentySeventh {
+  stroke-dasharray: 371px;
+  stroke-dashoffset: 371px;
+  animation: fadeInside 0.6s ease-in forwards 1.5s;
+}
+
+#twentyEighth {
+  stroke-dasharray: 651px;
+  stroke-dashoffset: 651px;
+  animation: fadeInside 0.6s ease-in forwards 1.65s;
+}
+
+#twentyNinth {
+  stroke-dasharray: 239px;
+  stroke-dashoffset: 239px;
+  animation: fadeInside 0.6s ease-in forwards 1.8s;
+}
+
+#thirtieth {
+  stroke-dasharray: 371px;
+  stroke-dashoffset: 371px;
+  animation: fadeInside 0.6s ease-in forwards 1.95s;
+}
+
+#thirtyFirst {
+  stroke-dasharray: 413px;
+  stroke-dashoffset: 413px;
+  animation: fadeInside 0.6s ease-in forwards 2.1s;
+}
+
+#thirtySecond {
+  stroke-dasharray: 413px;
+  stroke-dashoffset: 413px;
+  animation: fadeInside 0.6s ease-in forwards 2.25s;
+}
+
+#thirtyThird {
+  stroke-dasharray: 233px;
+  stroke-dashoffset: 233px;
+  animation: fadeInside 0.6s ease-in forwards 2.4s;
+}
+
+.svgGroup {
+  animation: fill 1s ease-in forwards 2.4s;
+}
+
+.newLineSvg {
+  margin-right: 2rem;
+}
+
+@keyframes fadeInside {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@keyframes fill {
+  from {
+    fill: transparent; /* cannot use 'none' because distances between none and white cannot be calculated*/
+  }
+  to {
+    fill: white;
+  }
+}

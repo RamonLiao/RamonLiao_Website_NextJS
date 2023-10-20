@@ -1,0 +1,164 @@
+{
+  "projects": [
+    {
+      "projectName": "Portfoilio Website",
+      "description": "Portfoilio Website",
+      "author": "Yu-Cheng Liao",
+      "architecture": "Front End",
+      "techniques": {
+        "languages": ["HTML", "CSS", "JavaScript"],
+        "frameworks": ["Node.js", "Next.js"],
+        "databases": [],
+        "others": []
+      },
+      "repoLink": "",
+      "demoLink": "",
+      "coverLink": "",
+      "createDate": ""
+    },
+    {
+      "projectName": "Lerning System - MERN based",
+      "description": "",
+      "author": "Yu-Cheng Liao",
+      "architecture": "Full Stack",
+      "techniques": {
+        "languages": ["HTML", "CSS", "JavaScript"],
+        "frameworks": ["Node.js", "React.js", "Express.js"],
+        "databases": ["MongoDB"],
+        "others": ["API"]
+      },
+      "repoLink": "",
+      "demoLink": "https://learning-system-mern.vercel.app/",
+      "coverLink": "LearningSystem.png",
+      "createDate": ""
+    },
+    {
+      "projectName": "Memory Game",
+      "description": "A game by memorising and entering correct numbers based on JavaScript development",
+      "author": "Yu-Cheng Liao",
+      "architecture": "Front End",
+      "techniques": {
+        "languages": ["HTML", "CSS", "JavaScript"],
+        "frameworks": [],
+        "databases": [],
+        "others": []
+      },
+      "repoLink": "https://github.com/RamonLiao/Web_Apps/tree/master/Game%20Apps/Memory%20Game",
+      "demoLink": "https://number-memory-game.vercel.app/",
+      "coverLink": "MemoryGame.gif",
+      "createDate": ""
+    },
+    {
+      "projectName": "Greedy Snake",
+      "description": "Using arrow keys to control the snake and eat fruits as much as possible. As it eats itself, the game ends",
+      "author": "Yu-Cheng Liao",
+      "architecture": "Front End",
+      "techniques": {
+        "languages": ["HTML", "CSS", "JavaScript"],
+        "frameworks": [],
+        "databases": [],
+        "others": []
+      },
+      "repoLink": "",
+      "demoLink": "",
+      "coverLink": "GreedySnake.gif",
+      "createDate": ""
+    },
+    {
+      "projectName": "Bouncing Balls",
+      "description": "Using arrow keys to control a panel and clear all bricks",
+      "author": "Yu-Cheng Liao",
+      "architecture": "Front End",
+      "techniques": {
+        "languages": ["HTML", "CSS", "JavaScript"],
+        "frameworks": [],
+        "databases": [],
+        "others": []
+      },
+      "repoLink": "",
+      "demoLink": "",
+      "coverLink": "BouncingBall.gif",
+      "createDate": ""
+    },
+    {
+      "projectName": "File Uploader",
+      "description": "Uploading a file to cloud database via web browser",
+      "author": "Yu-Cheng Liao",
+      "architecture": "Full Stack",
+      "techniques": {
+        "languages": ["HTML", "CSS", "JavaScript"],
+        "frameworks": ["Node.js", "React.js", "Express.js"],
+        "databases": ["MongoDB"],
+        "others": []
+      },
+      "repoLink": "https://github.com/RamonLiao/Web_Apps/tree/master/Widgets/File%20Uploader",
+      "demoLink": "",
+      "coverLink": "ChooseAFile.gif",
+      "createDate": ""
+    },
+    {
+      "projectName": "React-UI5-App",
+      "description": "A demo dashboard of SAP Fiori based on React development",
+      "author": "Yu-Cheng Liao",
+      "architecture": "Front End",
+      "techniques": {
+        "languages": ["HTML", "CSS", "JavaScript"],
+        "frameworks": ["Node.js", "React.js", "OpenUI5"],
+        "databases": [],
+        "others": []
+      },
+      "repoLink": "",
+      "demoLink": "",
+      "coverLink": "React_UI5_App.png",
+      "createDate": ""
+    },
+    {
+      "projectName": "Email Sender",
+      "description": "An email-sending app allowing to send an message to anyone",
+      "author": "Yu-Cheng Liao",
+      "architecture": "Front End",
+      "techniques": {
+        "languages": ["HTML", "CSS", "JavaScript"],
+        "frameworks": [],
+        "databases": [],
+        "others": []
+      },
+      "repoLink": "https://github.com/RamonLiao/Web_Apps/tree/master/Widgets/Email%20Sender",
+      "demoLink": "https://email-js-sender.vercel.app/",
+      "coverLink": "EmailSender.png",
+      "createDate": ""
+    },
+    {
+      "projectName": "Glassmorph Generator",
+      "description": "An adjustable generator of glassmorph",
+      "author": "Yu-Cheng Liao",
+      "architecture": "Front End",
+      "techniques": {
+        "languages": ["HTML", "CSS", "JavaScript"],
+        "frameworks": [],
+        "databases": [],
+        "others": []
+      },
+      "repoLink": "https://github.com/RamonLiao/Web_Apps/tree/master/Widgets/Glassmorph%20Generator%20App",
+      "demoLink": "https://glassmorph-generator-app.vercel.app/",
+      "coverLink": "GlassmorphGenerator.png",
+      "createDate": ""
+    },
+    {
+      "projectName": "Password Generator",
+      "description": "A password generator with pass settings",
+      "author": "Yu-Cheng Liao",
+      "architecture": "Front End",
+      "techniques": {
+        "languages": ["HTML", "CSS", "JavaScript"],
+        "frameworks": [],
+        "databases": [],
+        "others": []
+      },
+      "repoLink": "https://github.com/RamonLiao/Web_Apps/tree/master/Widgets/Password%20Generator",
+      "demoLink": "https://password-generator-demo.netlify.app/",
+      "coverLink": "PasswordGenerator.png",
+      "createDate": ""
+    }
+  ]
+}

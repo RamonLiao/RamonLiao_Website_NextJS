@@ -1,0 +1,303 @@
+div.animation {
+  width: 100%;
+  height: 100vh;
+  background-color: #e08958;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.animationEnd {
+  transition: all 1s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Animated Letters: Yu-Cheng Liao */
+#first {
+  stroke-dasharray: 360px;
+  stroke-dashoffset: 360px;
+  animation: fadeInside 0.6s ease-in forwards;
+}
+
+#second {
+  stroke-dasharray: 369px;
+  stroke-dashoffset: 369px;
+  animation: fadeInside 0.6s ease-in forwards 0.2s;
+}
+
+#third {
+  stroke-dasharray: 119px;
+  stroke-dashoffset: 119px;
+  animation: fadeInside 0.6s ease-in forwards 0.4s;
+}
+
+#fourth {
+  stroke-dasharray: 459px;
+  stroke-dashoffset: 459px;
+  animation: fadeInside 0.6s ease-in forwards 0.6s;
+}
+
+#fifth {
+  stroke-dasharray: 418px;
+  stroke-dashoffset: 418px;
+  animation: fadeInside 0.6s ease-in forwards 0.8s;
+}
+
+#sixth {
+  stroke-dasharray: 413px;
+  stroke-dashoffset: 413px;
+  animation: fadeInside 0.6s ease-in forwards 1s;
+}
+
+#seventh {
+  stroke-dasharray: 371px;
+  stroke-dashoffset: 371px;
+  animation: fadeInside 0.6s ease-in forwards 1.2s;
+}
+
+#eighth {
+  stroke-dasharray: 652px;
+  stroke-dashoffset: 652px;
+  animation: fadeInside 0.6s ease-in forwards 1.4s;
+}
+
+#ninth {
+  stroke-dasharray: 308px;
+  stroke-dashoffset: 308px;
+  animation: fadeInside 0.6s ease-in forwards 1.6s;
+}
+
+#tenth {
+  stroke-dasharray: 239px;
+  stroke-dashoffset: 239px;
+  animation: fadeInside 0.6s ease-in forwards 1.8s;
+}
+
+#eleventh {
+  stroke-dasharray: 404px;
+  stroke-dashoffset: 404px;
+  animation: fadeInside 0.6s ease-in forwards 2s;
+}
+
+#twelfth {
+  stroke-dasharray: 359px;
+  stroke-dashoffset: 359px;
+  animation: fadeInside 0.6s ease-in forwards 2.2s;
+}
+
+/* Animated Letters: Full-Stack Developer */
+#thirteenth {
+  stroke-dasharray: 390px;
+  stroke-dashoffset: 390px;
+  animation: fadeInside 0.6s ease-in forwards;
+}
+
+#fourteenth {
+  stroke-dasharray: 369px;
+  stroke-dashoffset: 369px;
+  animation: fadeInside 0.6s ease-in forwards 0.13s;
+}
+
+#fifteenth {
+  stroke-dasharray: 223px;
+  stroke-dashoffset: 223px;
+  animation: fadeInside 0.6s ease-in forwards 0.26s;
+}
+
+#sixteenth {
+  stroke-dasharray: 223px;
+  stroke-dashoffset: 223px;
+  animation: fadeInside 0.6s ease-in forwards 0.39s;
+}
+
+#seventeenth {
+  stroke-dasharray: 119px;
+  stroke-dashoffset: 119px;
+  animation: fadeInside 0.6s ease-in forwards 0.52s;
+}
+
+#eighteenth {
+  stroke-dasharray: 490px;
+  stroke-dashoffset: 490px;
+  animation: fadeInside 0.6s ease-in forwards 0.65s;
+}
+
+#nineteenth {
+  stroke-dasharray: 279px;
+  stroke-dashoffset: 279px;
+  animation: fadeInside 0.6s ease-in forwards 0.78s;
+}
+
+#twentyth {
+  stroke-dasharray: 404px;
+  stroke-dashoffset: 404px;
+  animation: fadeInside 0.6s ease-in forwards 0.91s;
+}
+
+#twentyFirst {
+  stroke-dasharray: 339px;
+  stroke-dashoffset: 39px;
+  animation: fadeInside 0.6s ease-in forwards 1.04s;
+}
+
+#twentySecond {
+  stroke-dasharray: 427px;
+  stroke-dashoffset: 427px;
+  animation: fadeInside 0.6s ease-in forwards 1.17s;
+}
+
+#twentyThird {
+  stroke-dasharray: 506px;
+  stroke-dashoffset: 506px;
+  animation: fadeInside 0.6s ease-in forwards 1.3s;
+}
+
+#twentyFourth {
+  stroke-dasharray: 413px;
+  stroke-dashoffset: 413px;
+  animation: fadeInside 0.6s ease-in forwards 1.43s;
+}
+
+#twentyFifth {
+  stroke-dasharray: 310px;
+  stroke-dashoffset: 310px;
+  animation: fadeInside 0.6s ease-in forwards 1.56s;
+}
+
+#twentySixth {
+  stroke-dasharray: 413px;
+  stroke-dashoffset: 413px;
+  animation: fadeInside 0.6s ease-in forwards 1.69s;
+}
+
+#twentySeventh {
+  stroke-dasharray: 223px;
+  stroke-dashoffset: 223px;
+  animation: fadeInside 0.6s ease-in forwards 1.82s;
+}
+
+#twentyEighth {
+  stroke-dasharray: 359px;
+  stroke-dashoffset: 359px;
+  animation: fadeInside 0.6s ease-in forwards 1.95s;
+}
+
+#twentyNinth {
+  stroke-dasharray: 455px;
+  stroke-dashoffset: 455px;
+  animation: fadeInside 0.6s ease-in forwards 2.08s;
+}
+
+#thirtieth {
+  stroke-dasharray: 413px;
+  stroke-dashoffset: 413px;
+  animation: fadeInside 0.6s ease-in forwards 2.21s;
+}
+
+#thirtyFirst {
+  stroke-dasharray: 233px;
+  stroke-dashoffset: 233px;
+  animation: fadeInside 0.6s ease-in forwards 2.34s;
+}
+
+.svgGroup {
+  /* width: 5em; */
+  animation: fill 1s ease-in forwards 2.4s;
+}
+
+/* Y narrow space-between */
+svg:has(> path#first) {
+  margin-right: -0.5em;
+  margin-left: -0.5em;
+}
+
+/* - moving upward */
+svg:has(> path#third),
+svg:has(> path#seventeenth) {
+  transform: translate(0, -150%);
+}
+
+/* g moving downward */
+svg:has(> path#eighth) {
+  transform: translate(0, 25%);
+}
+
+/* p moving downward */
+svg:has(> path#twentyNinth) {
+  transform: translate(0, 22%);
+}
+
+/* v narrow space-between */
+svg:has(> path#twentyFifth) {
+  margin-right: -0.5em;
+  margin-left: -0.5em;
+}
+
+/* l expand space-between */
+svg:has(> path#fifteenth),
+svg:has(> path#sixteenth),
+svg:has(> path#twentySeventh) {
+  margin-right: 0.1em;
+  margin-left: 0.1em;
+}
+
+div.logoGroup {
+  /* position: absolute; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+div.logoFirstLine {
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+  /* margin-bottom: 1em; */
+  /* position: relative; */
+}
+
+div.logoSecondLine {
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+  /* position: relative; */
+}
+
+.newLineSvg {
+  margin-right: 2em;
+}
+
+@media screen and (min-width: 480px) {
+  /* v narrow space-between */
+  svg:has(> path#twentyFifth) {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1100px) {
+  /* v narrow space-between */
+  svg:has(> path#twentyFifth) {
+    margin: 0;
+  }
+}
+@keyframes fadeInside {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+@keyframes fill {
+  from {
+    fill: transparent; /* cannot use 'none' because distances between none and white cannot be calculated*/
+  }
+  to {
+    fill: white;
+  }
+}/*# sourceMappingURL=animation-ycl.module.css.map */

@@ -1,0 +1,244 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+} */
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #f5f9ff;
+  padding: 20px;
+}
+
+.container {
+  /* max-width: 1070px; */
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  margin-inline: 1rem;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2); /* offset-x | offset-y | blur-radius | spread-radius | color */
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.gradientSection {
+  width: 50%;
+  position: relative;
+}
+
+.gradient {
+  width: 100%;
+  height: 100%;
+  background-color: #ccff99;
+  background-image: radial-gradient(
+      at 83% 69%,
+      hsla(280, 67%, 78%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 9% 70%, hsla(18, 81%, 74%, 1) 0px, transparent 50%),
+    radial-gradient(at 61% 52%, hsla(153, 75%, 65%, 1) 0px, transparent 50%),
+    radial-gradient(at 28% 93%, hsla(321, 74%, 60%, 1) 0px, transparent 50%),
+    radial-gradient(at 34% 6%, hsla(216, 89%, 66%, 1) 0px, transparent 50%),
+    radial-gradient(at 51% 86%, hsla(295, 97%, 67%, 1) 0px, transparent 50%),
+    radial-gradient(at 32% 55%, hsla(295, 99%, 66%, 1) 0px, transparent 50%);
+}
+
+.gradientContent {
+  padding: 3.5rem 2rem;
+  width: 92%;
+  position: absolute;
+  color: hsl(240, 54%, 15%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.28);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(6.7px);
+  backdrop-filter: blur(6.7px);
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.gradientContent h1 {
+  font-weight: 600;
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+}
+
+.gradientContent span {
+  color: #4776e6;
+}
+
+.formSection {
+  padding: 40px 50px 30px;
+  /* width: 550px; */
+  width: 55%;
+  background-color: #fff;
+}
+
+.formSection form {
+  margin-top: 15px;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.formGroup label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #16164d;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.formGroup input,
+.formGroup textarea {
+  font-size: 0.9rem;
+  font-weight: 500;
+  width: 100%;
+  color: hsl(240, 54%, 15%);
+  padding: 0.3rem;
+  border: 2px solid #ccc;
+  border-radius: 0.3rem;
+  outline: none;
+}
+
+.formGroup textarea {
+  height: 150px;
+  resize: none;
+}
+
+.sendBtn {
+  color: #fff;
+  background: linear-gradient(to right, #4776e6 0%, #7f47e6 100%);
+  padding: 6px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.resultContainer {
+  margin-top: 20px;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.resultContainer p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #3461ca;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 60rem) {
+  .container {
+    margin: 0;
+  }
+
+  .gradientContent {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 56rem) {
+  .container {
+    max-width: 90%;
+    flex-direction: column;
+    margin-inline: 0;
+    height: 100vh;
+  }
+
+  .gradientSection {
+    height: 30vh;
+  }
+
+  .gradientSection,
+  .formSection {
+    width: 100%;
+  }
+
+  .gradientContent {
+    inset: 0;
+    transform: translate(0, 0);
+    padding: 1rem 1.6rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .gradientContent h1 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  .gradientContent p {
+    font-size: 0.9rem;
+  }
+
+  .formSection {
+    flex: 1;
+    padding: 1rem;
+  }
+
+  .formSection h2 {
+    font-size: 1.25rem;
+  }
+
+  .formSection button {
+    font-size: 0.875rem;
+  }
+}
+
+@media screen and (max-width: 36.25rem) {
+  .container {
+    max-width: 100%;
+    height: 90vh;
+  }
+
+  .gradientContent h1 {
+    font-size: 1.2rem;
+  }
+
+  .gradientContent p {
+    display: none;
+  }
+
+  .formSection {
+    width: 100%;
+  }
+
+  .formSection button {
+    margin: 1rem;
+    padding: 10px 20px;
+    font-size: 1.25rem;
+  }
+
+  .resultContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 31.25rem) {
+  .container {
+    height: auto;
+  }
+  .gradientSection {
+    display: none;
+  }
+}

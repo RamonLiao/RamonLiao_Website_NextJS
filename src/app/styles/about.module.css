@@ -1,0 +1,102 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.table {
+  flex: 3 1 600px;
+  padding: 1.5rem 5rem;
+}
+.table table {
+  border-collapse: collapse;
+}
+.table table tr {
+  border-bottom: 2px solid gray;
+  transition: all 0.2s ease;
+}
+.table table tr td {
+  padding: 1em;
+}
+.table table tr td ul {
+  /* list-style-position: inside; */
+  margin-left: 1em;
+}
+.table table tr td ul li {
+  margin-bottom: 0.5em;
+}
+.table table tr td ul.listGroup {
+  list-style: none;
+}
+.table table tr td ul.listGroup li {
+  margin-bottom: 1em;
+}
+.table table tr td ul.listGroup li p {
+  margin: 0.5em 0;
+}
+.table table tr td ul.listGroup li p.roleName {
+  font-weight: 600;
+}
+.table table tr td ul.listGroup li p.roleInfo {
+  font-style: italic;
+  font-size: 14px;
+}
+.table table tr td ul.listGroup li ul.subListGroup {
+  list-style-type: "- ";
+  list-style-position: outside;
+  margin-left: 10px;
+}
+.table table tr td ul.listGroup li ul.subListGroup li {
+  margin-bottom: 0.5em;
+}
+.table table tr td.skillsGroup ul li div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.table table tr td.skillsGroup ul li div figure {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  margin: 0.5em 0.5em;
+}
+.table table tr td ul li span.uniInfo {
+  font-style: italic;
+  font-size: 14px;
+}
+.table table tr:hover {
+  background-color: #ffd2b8;
+}
+
+section.picture {
+  flex: 1 1 500px;
+  padding: 1.5em 0 0 1em;
+}
+section.picture img {
+  width: 25vw;
+  height: 35vw;
+}
+section.picture div.orangeRect {
+  width: 25vw;
+  height: 35vw;
+  background-color: #e08958;
+  position: absolute;
+  top: 23%;
+  right: 10%;
+  z-index: -1;
+}
+
+@media screen and (max-width: 1114px) {
+  main section.picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main section.picture img {
+    width: 25vw;
+    margin-bottom: 2rem;
+  }
+  main section.picture div.orangeRect {
+    display: none;
+  }
+}/*# sourceMappingURL=about.module.css.map */

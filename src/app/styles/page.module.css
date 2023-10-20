@@ -1,0 +1,34 @@
+.main {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main section.left {
+  flex: 3 1 600px;
+  padding: 2em 5em;
+}
+.main section.left h1 {
+  font-size: 3.5em;
+  color: #e08958;
+}
+.main section.left p {
+  font-size: 1.5em;
+  padding: 1em 0em;
+}
+.main section.right {
+  flex: 1 1 500px;
+  position: relative;
+}
+.main section.right img {
+  border-radius: 50%;
+  width: 20vw;
+  height: 20vw;
+  position: absolute;
+  top: 40vh;
+  right: 18vw;
+  transform: translateY(-50%);
+}
+
+/* .backgroundImg {
+  position: absolute;
+  z-index: -1;
+} *//*# sourceMappingURL=page.module.css.map */

@@ -1,0 +1,118 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.table {
+  flex: 3 1 600px;
+  padding: 1.5rem 5rem;
+  table {
+    border-collapse: collapse;
+    tr {
+      border-bottom: 2px solid gray;
+      transition: all 0.2s ease;
+      td {
+        padding: 1em;
+
+        ul {
+          /* list-style-position: inside; */
+          margin-left: 1em;
+          li {
+            margin-bottom: 0.5em;
+          }
+        }
+
+        ul.listGroup {
+          list-style: none;
+
+          li {
+            margin-bottom: 1em;
+          }
+
+          li p {
+            margin: 0.5em 0;
+
+            &.roleName {
+              font-weight: 600;
+            }
+
+            &.roleInfo {
+              font-style: italic;
+              font-size: 14px;
+            }
+          }
+
+          li ul.subListGroup {
+            list-style-type: "- ";
+            list-style-position: outside;
+            margin-left: 10px;
+            li {
+              margin-bottom: 0.5em;
+            }
+          }
+        }
+
+        &.skillsGroup {
+          ul li div {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            figure {
+              display: block;
+              text-align: center;
+              font-size: 14px;
+              margin: 0.5em 0.5em;
+            }
+          }
+        }
+
+        ul li span.uniInfo {
+          font-style: italic;
+          font-size: 14px;
+        }
+      }
+      &:hover {
+        background-color: #ffd2b8;
+      }
+    }
+  }
+}
+
+section.picture {
+  flex: 1 1 500px;
+  padding: 1.5em 0 0 1em;
+
+  img {
+    width: 25vw;
+    height: 35vw;
+  }
+
+  div.orangeRect {
+    width: 25vw;
+    height: 35vw;
+    background-color: #e08958;
+    position: absolute;
+    top: 23%;
+    right: 10%;
+    z-index: -1;
+  }
+}
+
+@media screen and (max-width: 1114px) {
+  main {
+    section.picture {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 25vw;
+        margin-bottom: 2rem;
+      }
+      div.orangeRect {
+        display: none;
+      }
+    }
+  }
+}
