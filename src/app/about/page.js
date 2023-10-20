@@ -21,8 +21,9 @@ export default function About() {
                       </p>
                       <ul className={styles.subListGroup}>
                         <li>
-                          Synthesised technical customisations based on clients'
-                          demands to develop business specifications
+                          Synthesised technical customisations based on
+                          clients&apos; demands to develop business
+                          specifications
                         </li>
                         <li>
                           Managed 2 development projects, achieving savings of

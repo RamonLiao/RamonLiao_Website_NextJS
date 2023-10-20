@@ -137,10 +137,10 @@ export default function Contact() {
             <div className={styles.gradient}></div>
             <div className={styles.gradientContent}>
               <h1 className={styles.heading}>
-                Welcome to <span>Ramon's</span> Website!
+                Welcome to <span>Ramon&apos;s</span> Website!
               </h1>
               <p className={styles.paragraph}>
-                Nothing is impossible. Let's build the future together!
+                Nothing is impossible. Let&apos;s build the future together!
               </p>
             </div>
           </div>

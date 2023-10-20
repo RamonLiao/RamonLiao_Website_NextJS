@@ -42,7 +42,9 @@ export default function Projects() {
           <div className={styles.cardName}>Portfolio Website</div>
         </div>
         {data &&
-          data.projects.map((detail) => <ProjectDetails detail={detail} />)}
+          data.projects.map((detail) => (
+            <ProjectDetails detail={detail} key="details" />
+          ))}
       </div>
     </main>
   );
@@ -80,15 +82,21 @@ function ProjectDetails({ ...props }) {
           <div className={styles.cardSkillArch}>{architecture}</div>
           {languages &&
             languages.map((tech) => (
-              <div className={styles.cardSkillLang}>{tech}</div>
+              <div className={styles.cardSkillLang} key="languages">
+                {tech}
+              </div>
             ))}
           {frameworks &&
             frameworks.map((tech) => (
-              <div className={styles.cardSkillFrame}>{tech}</div>
+              <div className={styles.cardSkillFrame} key="frameworks">
+                {tech}
+              </div>
             ))}
           {databases &&
             databases.map((tech) => (
-              <div className={styles.cardSkillDb}>{tech}</div>
+              <div className={styles.cardSkillDb} key="databases">
+                {tech}
+              </div>
             ))}
         </div>
         <div className={styles.cardFeet}>
