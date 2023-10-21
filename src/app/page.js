@@ -31,8 +31,8 @@ export default function Home() {
             height={100}
           />
         </section>
+        <BackgroundImg className={styles.backgroundImg} />
       </main>
-      <BackgroundImg className={styles.backgroundImg} />
     </>
   );
 }

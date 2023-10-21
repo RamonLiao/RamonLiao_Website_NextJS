@@ -251,7 +251,7 @@ export default function About() {
 
         <section className={styles.picture}>
           <Image
-            src="/images/TravelPic2.jpg"
+            src="./images/TravelPic2.JPG"
             alt="travel pic"
             width={144}
             height={200}

@@ -10,11 +10,11 @@ const imgStyle = {
   height: "150vh",
 };
 
-export default function backgroundImg() {
+export default function BackgroundImg() {
   return (
     <Image
       className="orangeBackground"
-      src="/Icons/orangeBackground.svg"
+      src="./Icons/OrangeBackground.svg"
       width={55}
       height={150}
       style={imgStyle}
