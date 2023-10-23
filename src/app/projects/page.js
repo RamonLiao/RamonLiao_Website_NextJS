@@ -13,7 +13,7 @@ export default function Projects() {
 
   return (
     <main>
-      <div>This is Projects page.</div>
+      {/* <div>This is Projects page.</div> */}
       <div className={styles.container}>
         <div className={styles.card}>
           <div className={styles.cardBody}>

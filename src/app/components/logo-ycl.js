@@ -3,32 +3,36 @@ import styles from "../styles/animation-ycl.module.css";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 
-// console.log(styles);
-
 export default function LogoYCL() {
   const pathname = usePathname();
+  const [animation, setAnimation] = useState(true);
+
+  const handleAnimation = () => {
+    setAnimation(false);
+  };
 
   useEffect(() => {
-    const text = document.querySelectorAll(".thePaths");
-    for (let i = 0; i < text.length; i++) {
-      console.log(`Text number ${i} length is ${text[i].getTotalLength()}`);
-    }
-
-    const lastWord = document.querySelector(`#${styles.thirtyFirst}`); // "#thirtyFirst"
-    const animation = document.querySelector(`div.${styles.animation}`); // "div.animation"
-    lastWord.addEventListener("animationend", () => {
-      animation.style =
-        "transition: all 1s ease; opacity: 0; pointer-events: none;";
-      console.log("Animation ended");
-    });
+    /** Counting svg positons */
+    // const text = document.querySelectorAll(".thePaths");
+    // for (let i = 0; i < text.length; i++) {
+    //   console.log(`Text number ${i} length is ${text[i].getTotalLength()}`);
+    // }
   }, []);
 
   return (
     <>
       {pathname && pathname == "/" && (
         <>
-          <div className={styles.animation}>
+          {console.log("rendered logo")}
+          <div
+            className={
+              animation
+                ? `${styles.animation}`
+                : `${styles.animation} ${styles.animationEnd}`
+            }
+          >
             <div className={styles.logoGroup}>
+              {/* First Line: Yu-Cheng Liao */}
               <div className={styles.logoFirstLine}>
                 {/* Y */}
                 <svg
@@ -237,6 +241,7 @@ export default function LogoYCL() {
                 </svg>
               </div>
               <br />
+              {/* Second Line: Full-Stack Develpoer */}
               <div className={styles.logoSecondLine}>
                 {/* F */}
                 <svg
@@ -409,6 +414,7 @@ export default function LogoYCL() {
                   />
                 </svg>
                 <br />
+
                 {/* D */}
                 <svg
                   className={styles.svgGroup}
@@ -560,6 +566,7 @@ export default function LogoYCL() {
                     strokeWidth="2"
                     id={styles.thirtyFirst}
                     className="thePaths"
+                    onAnimationEnd={handleAnimation}
                   />
                 </svg>
               </div>

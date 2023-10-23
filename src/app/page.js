@@ -17,7 +17,7 @@ export default function Home() {
             possible!
           </p>
           <p>
-            And don’t forget to keep smiling and positive to this beautiful
+            And don&apos;t forget to keep positive and smiling to this beautiful
             world!
           </p>
           <p>Cheers!</p>
