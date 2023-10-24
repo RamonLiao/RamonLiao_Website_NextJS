@@ -5,10 +5,12 @@
 .main section.left {
   flex: 3 1 600px;
   padding: 2em 5em;
+  z-index: 1;
 }
 .main section.left h1 {
   font-size: 3.5em;
   color: #e08958;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 .main section.left p {
   font-size: 1.5em;
@@ -28,7 +30,7 @@
   transform: translateY(-50%);
 }
 
-/* .backgroundImg {
+.backgroundImg {
   position: absolute;
-  z-index: -1;
-} *//*# sourceMappingURL=page.module.css.map */
+  z-index: -10;
+}/*# sourceMappingURL=page.module.css.map */
