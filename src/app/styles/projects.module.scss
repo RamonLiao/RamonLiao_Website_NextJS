@@ -60,18 +60,19 @@
         border-radius: 5px;
         background-color: #e2caa8;
         font-size: 0.875em;
+        height: 66px;
 
         div {
           display: inline-flex;
           margin: 0.2em;
-          padding: 0.2em;
+          padding: 0.1em;
           border-radius: 3px;
           border: 1px solid black;
         }
 
-        .cardSkillName {
+        /* .cardSkillName {
           background-color: lightskyblue;
-        }
+        } */
 
         .cardSkillArch {
           background-color: lightskyblue;

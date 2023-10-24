@@ -140,7 +140,7 @@ div.animationEnd {
 
 #twentyFirst {
   stroke-dasharray: 339px;
-  stroke-dashoffset: 39px;
+  stroke-dashoffset: 339px;
   animation: fadeInside 0.6s ease-in forwards 1.04s;
 }
 

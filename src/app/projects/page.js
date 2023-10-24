@@ -15,7 +15,7 @@ export default function Projects() {
     <main>
       {/* <div>This is Projects page.</div> */}
       <div className={styles.container}>
-        <div className={styles.card}>
+        {/* <div className={styles.card}>
           <div className={styles.cardBody}>
             <div className={styles.cardImg}>
               <Image
@@ -40,7 +40,7 @@ export default function Projects() {
             <div className={styles.cardFootRight}></div>
           </div>
           <div className={styles.cardName}>Portfolio Website</div>
-        </div>
+        </div> */}
         {data &&
           data.projects.map((detail) => (
             <ProjectDetails detail={detail} key="details" />
