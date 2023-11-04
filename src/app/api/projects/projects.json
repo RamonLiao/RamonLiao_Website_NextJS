@@ -17,8 +17,8 @@
       "createDate": ""
     },
     {
-      "projectName": "Lerning System - MERN based",
-      "description": "",
+      "projectName": "Lerning System (MERN)",
+      "description": "A learning website for students and teachers to encrol and manage courses",
       "author": "Yu-Cheng Liao",
       "architecture": "Full Stack",
       "techniques": {

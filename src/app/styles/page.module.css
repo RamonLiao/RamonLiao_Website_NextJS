@@ -33,4 +33,29 @@
 .backgroundImg {
   position: absolute;
   z-index: -10;
+}
+
+@media screen and (max-width: 1114px) {
+  .main {
+    flex-direction: column;
+  }
+  .main section.right {
+    /* display: block; */
+  }
+  .main section.right img {
+    min-width: 250px;
+    min-height: 250px;
+    width: 30vw;
+    height: 30vw;
+    right: 30vw;
+    transform: translateY(-120%);
+  }
+}
+@media screen and (max-width: 680px) {
+  .main section.right {
+    /* display: block; */
+  }
+  .main section.right img {
+    right: 20vw;
+  }
 }/*# sourceMappingURL=page.module.css.map */

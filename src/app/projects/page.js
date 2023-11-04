@@ -4,6 +4,7 @@ import Image from "next/image";
 import styles from "../styles/projects.module.css";
 // import React from "react";
 import useSWR from "swr";
+import Link from "next/link";
 
 export default function Projects() {
   const { data, error, isLoading } = useSWR("/api/projects", fetcher);
@@ -13,34 +14,7 @@ export default function Projects() {
 
   return (
     <main>
-      {/* <div>This is Projects page.</div> */}
       <div className={styles.container}>
-        {/* <div className={styles.card}>
-          <div className={styles.cardBody}>
-            <div className={styles.cardImg}>
-              <Image
-                className={styles.cardImgObj}
-                src="/images/TravelPic.jpg"
-                title="TravelPic"
-                alt="TravelPic"
-                width={360}
-                height={200}
-              />
-            </div>
-            <div className={styles.cardSkills}>
-              <div className={styles.cardSkillName}>Front-end</div>
-              <div className={styles.cardSkillName}>HTML</div>
-              <div className={styles.cardSkillName}>CSS</div>
-              <div className={styles.cardSkillName}>JavaScript</div>
-              <div className={styles.cardSkillName}>Next.js</div>
-            </div>
-          </div>
-          <div className={styles.cardFeet}>
-            <div className={styles.cardFootLeft}></div>
-            <div className={styles.cardFootRight}></div>
-          </div>
-          <div className={styles.cardName}>Portfolio Website</div>
-        </div> */}
         {data &&
           data.projects.map((detail) => (
             <ProjectDetails detail={detail} key="details" />
@@ -64,48 +38,54 @@ function ProjectDetails({ ...props }) {
   } = props.detail;
 
   const { languages, frameworks, databases, others } = techniques;
+  const projectNameNoSpace = projectName.trim().replace(/\s+/g, "-");
 
   return (
     <div className={styles.card}>
-      <div className={styles.cardBody}>
-        <div className={styles.cardImg}>
-          <Image
-            className={styles.cardImgObj}
-            src={"/images/project-covers/" + coverLink}
-            title={projectName}
-            alt={projectName}
-            width={360}
-            height={200}
-          />
+      <Link href={`/projects/detail/${projectNameNoSpace}`}>
+        <div className={styles.cardBody}>
+          <div className={styles.cardImg}>
+            <Image
+              className={styles.cardImgObj}
+              src={"/images/project-covers/" + coverLink}
+              title={projectName}
+              alt={projectName}
+              width={360}
+              height={200}
+            />
+          </div>
+          <div className={styles.cardSkills}>
+            <div className={styles.cardSkillArch}>{architecture}</div>
+            {languages &&
+              languages.map((tech) => (
+                <div className={styles.cardSkillLang} key="languages">
+                  {tech}
+                </div>
+              ))}
+            {frameworks &&
+              frameworks.map((tech) => (
+                <div className={styles.cardSkillFrame} key="frameworks">
+                  {tech}
+                </div>
+              ))}
+            {databases &&
+              databases.map((tech) => (
+                <div className={styles.cardSkillDb} key="databases">
+                  {tech}
+                </div>
+              ))}
+          </div>
+          <div className={styles.cardFeet}>
+            <div className={styles.cardFootLeft}></div>
+            <div className={styles.cardFootRight}></div>
+          </div>
         </div>
-        <div className={styles.cardSkills}>
-          <div className={styles.cardSkillArch}>{architecture}</div>
-          {languages &&
-            languages.map((tech) => (
-              <div className={styles.cardSkillLang} key="languages">
-                {tech}
-              </div>
-            ))}
-          {frameworks &&
-            frameworks.map((tech) => (
-              <div className={styles.cardSkillFrame} key="frameworks">
-                {tech}
-              </div>
-            ))}
-          {databases &&
-            databases.map((tech) => (
-              <div className={styles.cardSkillDb} key="databases">
-                {tech}
-              </div>
-            ))}
-        </div>
-        <div className={styles.cardFeet}>
-          <div className={styles.cardFootLeft}></div>
-          <div className={styles.cardFootRight}></div>
-        </div>
+      </Link>
+      <div className={styles.cardName}>
+        <a href={repoLink} target="_blank">
+          {projectName}
+        </a>
       </div>
-
-      <div className={styles.cardName}>{projectName}</div>
     </div>
   );
 }

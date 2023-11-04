@@ -24,7 +24,7 @@ export default function Home() {
         </section>
         <section className={styles.right}>
           <Image
-            className="myPic"
+            className={styles.myPic}
             src="/images/ProfessionalPhoto.png"
             alt="Selfie"
             width={100}
