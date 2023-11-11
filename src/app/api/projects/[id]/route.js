@@ -1,10 +1,14 @@
 import { NextResponse } from "next/server";
-import Projects from "./projects.json";
+import Projects from "../projects.json";
 
-export async function GET() {
+export async function GET(request, { params }) {
+  const id = params.id;
   //   const response = await fetch("./projects.json");
   //   const data = await res.json();
-  return NextResponse.json(Projects);
+  const projectsArr = Projects.projects;
+  const foundProject = projectsArr.filter((item) => item.id === id);
+
+  return NextResponse.json(foundProject[0]);
 }
 
 // export async function GET(request: Request) {}

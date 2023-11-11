@@ -1,6 +1,7 @@
 {
   "projects": [
     {
+      "id": "1",
       "projectName": "Portfoilio Website",
       "description": "Portfoilio Website",
       "author": "Yu-Cheng Liao",
@@ -17,6 +18,7 @@
       "createDate": ""
     },
     {
+      "id": "2",
       "projectName": "Lerning System (MERN)",
       "description": "A learning website for students and teachers to encrol and manage courses",
       "author": "Yu-Cheng Liao",
@@ -33,6 +35,7 @@
       "createDate": ""
     },
     {
+      "id": "3",
       "projectName": "Memory Game",
       "description": "A game by memorising and entering correct numbers based on JavaScript development",
       "author": "Yu-Cheng Liao",
@@ -49,6 +52,7 @@
       "createDate": ""
     },
     {
+      "id": "4",
       "projectName": "Greedy Snake",
       "description": "Using arrow keys to control the snake and eat fruits as much as possible. As it eats itself, the game ends",
       "author": "Yu-Cheng Liao",
@@ -65,6 +69,7 @@
       "createDate": ""
     },
     {
+      "id": "5",
       "projectName": "Bouncing Balls",
       "description": "Using arrow keys to control a panel and clear all bricks",
       "author": "Yu-Cheng Liao",
@@ -81,6 +86,7 @@
       "createDate": ""
     },
     {
+      "id": "6",
       "projectName": "File Uploader",
       "description": "Uploading a file to cloud database via web browser",
       "author": "Yu-Cheng Liao",
@@ -97,6 +103,7 @@
       "createDate": ""
     },
     {
+      "id": "7",
       "projectName": "React-UI5-App",
       "description": "A demo dashboard of SAP Fiori based on React development",
       "author": "Yu-Cheng Liao",
@@ -113,6 +120,7 @@
       "createDate": ""
     },
     {
+      "id": "8",
       "projectName": "Email Sender",
       "description": "An email-sending app allowing to send an message to anyone",
       "author": "Yu-Cheng Liao",
@@ -129,6 +137,7 @@
       "createDate": ""
     },
     {
+      "id": "9",
       "projectName": "Glassmorph Generator",
       "description": "An adjustable generator of glassmorph",
       "author": "Yu-Cheng Liao",
@@ -145,6 +154,7 @@
       "createDate": ""
     },
     {
+      "id": "10",
       "projectName": "Password Generator",
       "description": "A password generator with pass settings",
       "author": "Yu-Cheng Liao",

@@ -10,11 +10,11 @@
 /* "fixed z-10 left-0 right-0 top-0 bottom-0 mx-auto bg-black/60" */
 .wrapper {
   position: absolute;
-  border: 1px solid red;
+  border: 1px solid black;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 60%;
+  width: 50%;
   height: 70vh;
   background-color: #fff;
   border-radius: 20px;

@@ -2,12 +2,13 @@
 
 import Image from "next/image";
 import styles from "../styles/projects.module.css";
-// import React from "react";
-import useSWR from "swr";
 import Link from "next/link";
+import { useProject, preloadData } from "../components/dataManage";
+
+preloadData("/api/projects");
 
 export default function Projects() {
-  const { data, error, isLoading } = useSWR("/api/projects", fetcher);
+  const { data, error, isLoading } = useProject();
 
   if (error) return <div>failed to load</div>;
   if (isLoading) return <div>loading...</div>;
@@ -17,17 +18,16 @@ export default function Projects() {
       <div className={styles.container}>
         {data &&
           data.projects.map((detail) => (
-            <ProjectDetails detail={detail} key="details" />
+            <ProjectDetails detail={detail} key={`${detail.id}`} />
           ))}
       </div>
     </main>
   );
 }
 
-const fetcher = (...args) => fetch(...args).then((res) => res.json());
-
 function ProjectDetails({ ...props }) {
   const {
+    id,
     projectName,
     description,
     architecture,
@@ -42,7 +42,7 @@ function ProjectDetails({ ...props }) {
 
   return (
     <div className={styles.card}>
-      <Link href={`/projects/detail/${projectNameNoSpace}`}>
+      <Link href={`/projects/detail/${id}/${projectNameNoSpace}`}>
         <div className={styles.cardBody}>
           <div className={styles.cardImg}>
             <Image
@@ -58,19 +58,19 @@ function ProjectDetails({ ...props }) {
             <div className={styles.cardSkillArch}>{architecture}</div>
             {languages &&
               languages.map((tech) => (
-                <div className={styles.cardSkillLang} key="languages">
+                <div className={styles.cardSkillLang} key={`languages${id}`}>
                   {tech}
                 </div>
               ))}
             {frameworks &&
               frameworks.map((tech) => (
-                <div className={styles.cardSkillFrame} key="frameworks">
+                <div className={styles.cardSkillFrame} key={`frameworks${id}`}>
                   {tech}
                 </div>
               ))}
             {databases &&
               databases.map((tech) => (
-                <div className={styles.cardSkillDb} key="databases">
+                <div className={styles.cardSkillDb} key={`databases${id}`}>
                   {tech}
                 </div>
               ))}
