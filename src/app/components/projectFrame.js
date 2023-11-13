@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../styles/projectFrame.module.css";
+import styles from "@/styles/projectFrame.module.css";
 
 export default function ProjectFrame({ ...props }) {
   const {

@@ -1,5 +1,4 @@
 import Image from "next/image";
-// import orangeBackground from "/Icons/orangeBackground.svg";
 
 const imgStyle = {
   position: "absolute",

@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useRef } from "react";
-import styles from "../styles/contact.module.css";
+import styles from "@/styles/contact.module.css";
 import emailjs from "@emailjs/browser";
 
 export default function Contact() {

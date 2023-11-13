@@ -1,8 +1,8 @@
 "use client";
 
 import Modal from "@/app/components/modal";
-import { useProjectDetail } from "../../../../../components/dataManage";
-import ProjectFrame from "../../../../../components/projectFrame";
+import { useProjectDetail } from "@/components/dataManage";
+import ProjectFrame from "@/components/projectFrame";
 
 export default function Page({ params }) {
   const { data, error, isLoading } = useProjectDetail(params.id);

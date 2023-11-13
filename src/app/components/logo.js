@@ -1,9 +1,7 @@
 "use client";
-import styles from "../styles/animation.module.css";
+import styles from "@/styles/animation.module.css";
 import { usePathname } from "next/navigation";
-import { useState, useEffect } from "react";
-
-// console.log(styles);
+import {  useEffect } from "react";
 
 export default function Logo() {
   const pathname = usePathname();

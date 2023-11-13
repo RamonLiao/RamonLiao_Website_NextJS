@@ -1,5 +1,5 @@
 "use client";
-import styles from "../styles/animation-ycl.module.css";
+import styles from "@/styles/animation-ycl.module.css";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 

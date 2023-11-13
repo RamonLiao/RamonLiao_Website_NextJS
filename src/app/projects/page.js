@@ -1,9 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import styles from "../styles/projects.module.css";
+import styles from "@/styles/projects.module.css";
 import Link from "next/link";
-import { useProject, preloadData } from "../components/dataManage";
+import { useProject, preloadData } from "@/components/dataManage";
 
 // preloadData("/api/projects");
 

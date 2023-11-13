@@ -1,6 +1,6 @@
 import Image from "next/image";
-import styles from "./styles/page.module.css";
-import BackgroundImg from "./components/backgroundImg";
+import styles from "@/styles/page.module.css";
+import BackgroundImg from "@/components/backgroundImg";
 
 export default function Home() {
   return (

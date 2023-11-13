@@ -1,8 +1,8 @@
 "use client";
 
-import styles from "../../../../styles/projectDetail.module.css";
-import { useProjectDetail } from "../../../../components/dataManage";
-import ProjectFrame from "../../../../components/projectFrame";
+import styles from "@/styles/projectDetail.module.css";
+import { useProjectDetail } from "@/components/dataManage";
+import ProjectFrame from "@/components/projectFrame";
 
 export default function Page({ params }) {
   const { data, error, isLoading } = useProjectDetail(params.id);

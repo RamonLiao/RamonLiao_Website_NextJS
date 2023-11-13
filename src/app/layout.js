@@ -1,7 +1,7 @@
-import "./styles/globals.css";
+import "@/styles/globals.css";
 import { Inter, Poppins } from "next/font/google";
-import Logo from "./components/logo";
-import LogoYCL from "./components/logo-ycl";
+// import Logo from "./components/logo";
+import LogoYCL from "@/components/logo-ycl";
 import NavBar from "./navBar";
 
 const inter = Inter({ subsets: ["latin"] });
