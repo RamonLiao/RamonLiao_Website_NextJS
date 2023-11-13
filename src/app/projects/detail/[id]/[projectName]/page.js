@@ -1,5 +1,6 @@
 "use client";
 
+import styles from "../../../../styles/projectDetail.module.css";
 import { useProjectDetail } from "../../../../components/dataManage";
 import ProjectFrame from "../../../../components/projectFrame";
 
@@ -11,8 +12,9 @@ export default function Page({ params }) {
 
   return (
     <>
-      <div>Directory Page</div>
-      <ProjectFrame data={data}></ProjectFrame>
+      <div className={styles.container}>
+        <ProjectFrame data={data}></ProjectFrame>
+      </div>
     </>
   );
 }

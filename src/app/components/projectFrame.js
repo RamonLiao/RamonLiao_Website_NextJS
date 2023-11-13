@@ -17,16 +17,18 @@ export default function ProjectFrame({ ...props }) {
   return (
     <div className={styles.container}>
       <div className={styles.cardName}>
-        <h1>{projectName}</h1>
+        <h2>{projectName}</h2>
       </div>
-      <Image
-        className={styles.cardImgObj}
-        src={"/images/project-covers/" + coverLink}
-        title={projectName}
-        alt={projectName}
-        width={360}
-        height={200}
-      />
+      <div className={styles.cardImg}>
+        <Image
+          className={styles.cardImgObj}
+          src={"/images/project-covers/" + coverLink}
+          title={projectName}
+          alt={projectName}
+          width={360}
+          height={200}
+        />
+      </div>
       <div className={styles.cardSkills}>
         <div className={styles.cardSkillArch}>{architecture}</div>
         {languages &&
@@ -51,9 +53,21 @@ export default function ProjectFrame({ ...props }) {
       <div className={styles.cardDescrip}>
         <p>{description}</p>
       </div>
-      <div lassName={styles.cardLinks}>
-        <a href={demoLink}>Demo</a>
-        <a href={repoLink}>GitHub</a>
+      <div className={styles.cardLinks}>
+        {demoLink && (
+          <div>
+            <a href={demoLink} target="_blank">
+              Demo
+            </a>
+          </div>
+        )}
+        {repoLink && (
+          <div>
+            <a href={repoLink} target="_blank">
+              GitHub
+            </a>
+          </div>
+        )}
       </div>
     </div>
   );

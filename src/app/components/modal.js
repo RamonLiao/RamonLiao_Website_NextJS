@@ -36,7 +36,7 @@ export default function Modal({ children }) {
   return (
     <div ref={overlay} className={styles.overlay} onClick={onClick}>
       <div ref={wrapper} className={styles.wrapper}>
-        {children}
+        <div className={styles.innerWrapper}>{children}</div>
       </div>
     </div>
   );

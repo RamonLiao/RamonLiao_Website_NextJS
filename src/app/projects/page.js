@@ -5,7 +5,7 @@ import styles from "../styles/projects.module.css";
 import Link from "next/link";
 import { useProject, preloadData } from "../components/dataManage";
 
-preloadData("/api/projects");
+// preloadData("/api/projects");
 
 export default function Projects() {
   const { data, error, isLoading } = useProject();

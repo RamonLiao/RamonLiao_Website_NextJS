@@ -1,0 +1,9 @@
+.container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
