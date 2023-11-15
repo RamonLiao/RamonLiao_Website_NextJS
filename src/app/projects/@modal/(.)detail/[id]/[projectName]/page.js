@@ -1,6 +1,6 @@
 "use client";
 
-import Modal from "@/app/components/modal";
+import Modal from "@/components/modal";
 import { useProjectDetail } from "@/components/dataManage";
 import ProjectFrame from "@/components/projectFrame";
 
