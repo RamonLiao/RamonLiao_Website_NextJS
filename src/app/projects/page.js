@@ -82,9 +82,13 @@ function ProjectDetails({ ...props }) {
         </div>
       </Link>
       <div className={styles.cardName}>
-        <a href={repoLink} target="_blank">
-          {projectName}
-        </a>
+        {repoLink ? (
+          <a href={repoLink} target="_blank">
+            {projectName}
+          </a>
+        ) : (
+          projectName
+        )}
       </div>
     </div>
   );

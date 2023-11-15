@@ -114,9 +114,10 @@
     }
 
     .cardName {
-      margin-top: 1em;
+      margin-top: 1.5em;
       text-align: center;
       font-weight: 600;
+      cursor: default;
 
       a:hover {
         text-decoration-line: underline;
