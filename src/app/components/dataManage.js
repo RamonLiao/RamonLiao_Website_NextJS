@@ -1,21 +1,27 @@
-import useSWR, { preload } from "swr";
+// import useSWR, { preload, unstable_serialize } from "swr";
 
-const fetcher = (...args) => fetch(...args).then((res) => res.json());
+// const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
-function preloadData(url) {
-  preload(url, fetcher);
-}
+// function preloadData(url) {
+//   preload(url, fetcher);
+// }
 
-function useProject() {
-  const { data, error, isLoading } = useSWR("/api/projects", fetcher);
+// function getProject(shouldPreload = false) {
+//   const { data, error, isLoading } = useSWR(
+//     shouldPreload ? "/api/projects" : null,
+//     fetcher
+//   );
 
-  return { data, error, isLoading };
-}
+//   return { data, error, isLoading };
+// }
 
-function useProjectDetail(id) {
-  const { data, error, isLoading } = useSWR(`/api/projects/${id}`, fetcher);
+// function getProjectDetail(id, shouldPreload = false) {
+//   const { data, error, isLoading } = useSWR(
+//     shouldPreload ? `/api/projects/${id}` : null,
+//     fetcher
+//   );
 
-  return { data, error, isLoading };
-}
+//   return { data, error, isLoading };
+// }
 
-module.exports = { preloadData, useProject, useProjectDetail };
+// module.exports = { preloadData, getProject, getProjectDetail };

@@ -1,20 +1,23 @@
-"use client";
+// "use client";
 
 import styles from "@/styles/projectDetail.module.css";
-import { useProjectDetail } from "@/components/dataManage";
+
 import ProjectFrame from "@/components/projectFrame";
+import ProjectsAll from "@/api/projects/projects.json";
+import useSWR, { unstable_serialize } from "swr";
+import { useParams } from "next/navigation";
+import ShowPage from "./showPage.js";
+
+export async function generateStaticParams() {
+  return ProjectsAll.projects.map((project) => {
+    return {
+      id: project.id,
+      projectName: project.projectName.trim().replace(/\s+/g, "-"),
+    };
+  });
+}
+// const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
 export default function Page({ params }) {
-  const { data, error, isLoading } = useProjectDetail(params.id);
-  console.log(data);
-  if (error) return <div>failed to load</div>;
-  if (isLoading) return <div>loading...</div>;
-
-  return (
-    <>
-      <div className={styles.container}>
-        <ProjectFrame data={data}></ProjectFrame>
-      </div>
-    </>
-  );
+  return <ShowPage props={params} />;
 }

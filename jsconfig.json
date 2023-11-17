@@ -5,7 +5,8 @@
       "@/*": ["./src/*"],
       "@/styles/*": ["./src/app/styles/*"],
       "@/components/*": ["./src/app/components/*"],
-      "@/fonts": ["./src/app/styles/fonts/*"]
+      "@/fonts/*": ["./src/app/styles/fonts/*"],
+      "@/api/*": ["./src/app/api/*"]
     }
   }
 }

@@ -1,17 +1,34 @@
-"use client";
+// "use client";
 
 import Image from "next/image";
 import styles from "@/styles/projects.module.css";
 import Link from "next/link";
-import { useProject, preloadData } from "@/components/dataManage";
+import { getProject, preloadData } from "@/components/dataManage";
+import ProjectsAll from "@/api/projects/projects.json";
+
+import useSWR from "swr";
+
+const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
 // preloadData("/api/projects");
+// export async function generateStaticParams() {
+//   const { data, error, isLoading } = getProject();
+
+//   return [{ data, error, isLoading }];
+// }
 
 export default function Projects() {
-  const { data, error, isLoading } = useProject();
+  // const { data, error, isLoading } = getProject();
 
-  if (error) return <div>failed to load</div>;
-  if (isLoading) return <div>loading...</div>;
+  // const { data, error, isLoading } = useSWR("/api/projects", fetcher);
+
+  // if (error) return <div>failed to load</div>;
+  // if (isLoading) return <div>loading...</div>;
+  const data = ProjectsAll;
+
+  if (!data) {
+    if (error) return <div>failed to load</div>;
+  }
 
   return (
     <main>

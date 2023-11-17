@@ -1,8 +1,16 @@
 import { NextResponse } from "next/server";
 import Projects from "../projects.json";
 
+export async function generateStaticParams() {
+  return Projects.projects.map((project) => {
+    return {
+      id: project.id,
+    };
+  });
+}
+
 export async function GET(request, { params }) {
-  const id = params.id;
+  const { id } = params;
   //   const response = await fetch("./projects.json");
   //   const data = await res.json();
   const projectsArr = Projects.projects;
