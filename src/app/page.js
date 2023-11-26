@@ -31,7 +31,10 @@ export default function Home() {
             height={100}
           />
         </section>
-        <BackgroundImg className={styles.backgroundImg} />
+        <div className={styles.bkgContainer}>
+          <BackgroundImg />
+          <div className={styles.bkgRound}></div>
+        </div>
       </main>
     </>
   );

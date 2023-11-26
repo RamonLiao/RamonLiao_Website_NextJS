@@ -4,67 +4,82 @@
   flex-wrap: wrap;
 }
 
-.table {
+section.table {
   flex: 3 1 600px;
   padding: 1.5rem 5rem;
+  /* height: 100vh;
+  overflow: hidden; */
 }
-.table table {
+section.table .container {
+  /* height: 100%;
+  overflow-y: auto; */
+}
+section.table .container table {
   border-collapse: collapse;
 }
-.table table tr {
+section.table .container table tr {
   border-bottom: 2px solid gray;
   transition: all 0.2s ease;
 }
-.table table tr td {
+section.table .container table tr:first-child {
+  border-top: 2px solid gray;
+}
+section.table .container table tr td {
   padding: 1em;
 }
-.table table tr td ul {
+section.table .container table tr td:first-child {
+  width: 20%;
+}
+section.table .container table tr td:second-child {
+  width: 80%;
+}
+section.table .container table tr td ul {
   /* list-style-position: inside; */
   margin-left: 1em;
 }
-.table table tr td ul li {
+section.table .container table tr td ul li {
   margin-bottom: 0.5em;
 }
-.table table tr td ul.listGroup {
+section.table .container table tr td ul.listGroup {
   list-style: none;
 }
-.table table tr td ul.listGroup li {
+section.table .container table tr td ul.listGroup li {
   margin-bottom: 1em;
 }
-.table table tr td ul.listGroup li p {
+section.table .container table tr td ul.listGroup li p {
   margin: 0.5em 0;
 }
-.table table tr td ul.listGroup li p.roleName {
+section.table .container table tr td ul.listGroup li p.roleName {
   font-weight: 600;
 }
-.table table tr td ul.listGroup li p.roleInfo {
+section.table .container table tr td ul.listGroup li p.roleInfo {
   font-style: italic;
   font-size: 14px;
 }
-.table table tr td ul.listGroup li ul.subListGroup {
+section.table .container table tr td ul.listGroup li ul.subListGroup {
   list-style-type: "- ";
   list-style-position: outside;
   margin-left: 10px;
 }
-.table table tr td ul.listGroup li ul.subListGroup li {
+section.table .container table tr td ul.listGroup li ul.subListGroup li {
   margin-bottom: 0.5em;
 }
-.table table tr td.skillsGroup ul li div {
+section.table .container table tr td.skillsGroup ul li div {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.table table tr td.skillsGroup ul li div figure {
+section.table .container table tr td.skillsGroup ul li div figure {
   display: block;
   text-align: center;
   font-size: 14px;
   margin: 0.5em 0.5em;
 }
-.table table tr td ul li span.uniInfo {
+section.table .container table tr td ul li span.uniInfo {
   font-style: italic;
   font-size: 14px;
 }
-.table table tr:hover {
+section.table .container table tr:hover {
   background-color: #ffd2b8;
 }
 
@@ -87,16 +102,80 @@ section.picture div.orangeRect {
 }
 
 @media screen and (max-width: 1114px) {
-  main section.picture {
+  .main section.picture {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  main section.picture img {
-    width: 25vw;
+  .main section.picture img {
+    width: 35vw;
+    height: 49vw;
     margin-bottom: 2rem;
   }
-  main section.picture div.orangeRect {
+  .main section.picture div.orangeRect {
     display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main section.table {
+    padding: 1.5rem 1rem;
+  }
+  .main section.table .container table tbody tr td {
+    display: block;
+    width: 100%;
+  }
+  .main section.table .container table tbody tr td ul {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+  }
+  .main section.table .container table tbody tr td ul li {
+    width: 100%;
+    text-align: center;
+  }
+  .main section.table .container table tbody tr td ul li p.roleName,
+  .main section.table .container table tbody tr td ul li p.roleInfo {
+    text-align: center;
+  }
+  .main section.table .container table tbody tr td ul .subListGroup li {
+    text-align: left;
+  }
+  .main section.table .container table tbody tr td:first-child {
+    padding-bottom: 0.5rem;
+  }
+  .main section.table .container table tbody tr td .aboutCategories {
+    font-weight: 600;
+    font-size: 1.25rem;
+    text-align: center;
+  }
+  .main section.table .container table tbody tr td.skillsGroup ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .main section.table .container table tbody tr td.skillsGroup ul li {
+    list-style: none;
+    margin-bottom: 1rem;
+  }
+  .main section.table .container table tbody tr td.skillsGroup ul li p {
+    font-weight: 600;
+  }
+  .main section.table .container table tbody tr td.skillsGroup ul li div {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .main section.table .container table tbody tr td.eduGroup ul li, .main section.table .container table tbody tr td.langGroup ul li {
+    list-style: none;
+  }
+  .main section.table .container table tbody tr td.eduGroup .uniSubject {
+    font-weight: 500;
+  }
+  .main section.table .container table tbody tr td.intsGroup {
+    text-align: center;
+  }
+  .main section.picture img {
+    width: 50vw;
+    height: 70vw;
   }
 }/*# sourceMappingURL=about.module.css.map */

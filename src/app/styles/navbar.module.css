@@ -80,6 +80,7 @@
     right: 2rem;
     background: none;
     border: none;
+    cursor: pointer;
   }
   .navbar ul {
     width: 100%;

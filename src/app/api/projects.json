@@ -1,0 +1,112 @@
+[
+  {
+    "projectName": "Email Sender",
+    "category": "Apps",
+    "description": "An email-sending app allowing to send an message to anyone",
+    "author": "Yu-Cheng Liao",
+    "architecture": "Front End",
+    "languages": "[\"HTML\",\"CSS\",\"JavaScript\"]",
+    "frameworks": "[]",
+    "databases": "[]",
+    "others": "[]",
+    "repoLink": "https://github.com/RamonLiao/Web_Apps/tree/master/Widgets/Email%20Sender",
+    "demoLink": "https://email-js-sender.vercel.app/",
+    "coverLink": "EmailSender.png",
+    "techniques": [
+      {
+        "languages": "[\"HTML\",\"CSS\",\"JavaScript\"]",
+        "frameworks": "[]",
+        "databases": "[]",
+        "others": "[]"
+      }
+    ]
+  },
+  {
+    "projectName": "Glassmorph Generator",
+    "category": "Apps",
+    "description": "An adjustable generator of glassmorph",
+    "author": "Yu-Cheng Liao",
+    "architecture": "Front End",
+    "languages": "[\"HTML\",\"CSS\",\"JavaScript\"]",
+    "frameworks": "[]",
+    "databases": "[]",
+    "others": "[]",
+    "repoLink": "https://github.com/RamonLiao/Web_Apps/tree/master/Widgets/Glassmorph%20Generator%20App",
+    "demoLink": "https://glassmorph-generator-app.vercel.app/",
+    "coverLink": "GlassmorphGenerator.png",
+    "techniques": [
+      {
+        "languages": "[\"HTML\",\"CSS\",\"JavaScript\"]",
+        "frameworks": "[]",
+        "databases": "[]",
+        "others": "[]"
+      }
+    ]
+  },
+  {
+    "projectName": "Memory Game",
+    "category": "Games",
+    "description": "A game by memorising and entering correct numbers based on JavaScript development",
+    "author": "Yu-Cheng Liao",
+    "architecture": "Front End",
+    "languages": "[\"HTML\",\"CSS\",\"JavaScript\"]",
+    "frameworks": "[]",
+    "databases": "[]",
+    "others": "[]",
+    "repoLink": "https://github.com/RamonLiao/Web_Apps/tree/master/Game%20Apps/Memory%20Game",
+    "demoLink": "https://number-memory-game.vercel.app/",
+    "coverLink": "MemoryGame.gif",
+    "techniques": [
+      {
+        "languages": "[\"HTML\",\"CSS\",\"JavaScript\"]",
+        "frameworks": "[]",
+        "databases": "[]",
+        "others": "[]"
+      }
+    ]
+  },
+  {
+    "projectName": "Password Generator",
+    "category": "Apps",
+    "description": "A password generator with pass settings",
+    "author": "Yu-Cheng Liao",
+    "architecture": "Front End",
+    "languages": "[\"HTML\",\"CSS\",\"JavaScript\"]",
+    "frameworks": "[]",
+    "databases": "[]",
+    "others": "[]",
+    "repoLink": "https://github.com/RamonLiao/Web_Apps/tree/master/Widgets/Password%20Generator",
+    "demoLink": "https://password-generator-demo.netlify.app/",
+    "coverLink": "PasswordGenerator.png",
+    "techniques": [
+      {
+        "languages": "[\"HTML\",\"CSS\",\"JavaScript\"]",
+        "frameworks": "[]",
+        "databases": "[]",
+        "others": "[]"
+      }
+    ]
+  },
+  {
+    "projectName": "Portfoilio Website",
+    "category": "Website",
+    "description": "Portfoilio Website",
+    "author": "Yu-Cheng Liao",
+    "architecture": "Front End",
+    "languages": "[\"HTML\",\"CSS\",\"JavaScript\"]",
+    "frameworks": "[\"Node.js\",\"Next.js\"]",
+    "databases": "[]",
+    "others": "[]",
+    "repoLink": "https://github.com/RamonLiao/RamonLiao_Website_NextJS",
+    "demoLink": "https://ramonliao-website-nextjs.vercel.app/",
+    "coverLink": "WebsiteAnime.gif",
+    "techniques": [
+      {
+        "languages": "[\"HTML\",\"CSS\",\"JavaScript\"]",
+        "frameworks": "[\"Node.js\",\"Next.js\"]",
+        "databases": "[]",
+        "others": "[]"
+      }
+    ]
+  }
+]
