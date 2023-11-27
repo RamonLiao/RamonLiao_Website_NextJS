@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
     <html>
       <body className={poppins.className}>
         {/* <Logo /> */}
-        {/* <LogoYCL className="logo" /> */}
+        <LogoYCL className="logo" />
         <NavBar />
         <div className="child-div">{children}</div>
       </body>

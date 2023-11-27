@@ -7,17 +7,18 @@ export default function LogoYCL() {
   const pathname = usePathname();
   const [animation, setAnimation] = useState(true);
 
+  // configured to run at the end of the animation (last svg)
   const handleAnimation = () => {
     setAnimation(false);
   };
 
-  useEffect(() => {
-    /** Counting svg positons */
-    // const text = document.querySelectorAll(".thePaths");
-    // for (let i = 0; i < text.length; i++) {
-    //   console.log(`Text number ${i} length is ${text[i].getTotalLength()}`);
-    // }
-  }, []);
+  // useEffect(() => {
+  //   /** Counting svg positons */
+  //   const text = document.querySelectorAll(".thePaths");
+  //   for (let i = 0; i < text.length; i++) {
+  //     console.log(`Text number ${i} length is ${text[i].getTotalLength()}`);
+  //   }
+  // }, []);
 
   return (
     <>

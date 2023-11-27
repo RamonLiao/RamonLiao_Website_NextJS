@@ -62,7 +62,7 @@ section.table .container table tr td ul.listGroup li ul.subListGroup {
   margin-left: 10px;
 }
 section.table .container table tr td ul.listGroup li ul.subListGroup li {
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
 }
 section.table .container table tr td.skillsGroup ul li div {
   display: flex;
@@ -78,6 +78,9 @@ section.table .container table tr td.skillsGroup ul li div figure {
 section.table .container table tr td ul li span.uniInfo {
   font-style: italic;
   font-size: 14px;
+}
+section.table .container table tr td.intsGroup p {
+  margin-bottom: 1rem;
 }
 section.table .container table tr:hover {
   background-color: #ffd2b8;
@@ -132,6 +135,7 @@ section.picture div.orangeRect {
   .main section.table .container table tbody tr td ul li {
     width: 100%;
     text-align: center;
+    margin-bottom: 1.5rem;
   }
   .main section.table .container table tbody tr td ul li p.roleName,
   .main section.table .container table tbody tr td ul li p.roleInfo {
@@ -139,6 +143,9 @@ section.picture div.orangeRect {
   }
   .main section.table .container table tbody tr td ul .subListGroup li {
     text-align: left;
+  }
+  .main section.table .container table tbody tr td ul .subListGroup li li {
+    /* margin-bottom: 0.5rem; */
   }
   .main section.table .container table tbody tr td:first-child {
     padding-bottom: 0.5rem;
@@ -154,7 +161,7 @@ section.picture div.orangeRect {
   }
   .main section.table .container table tbody tr td.skillsGroup ul li {
     list-style: none;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1.5rem; */
   }
   .main section.table .container table tbody tr td.skillsGroup ul li p {
     font-weight: 600;
@@ -166,6 +173,7 @@ section.picture div.orangeRect {
     align-items: center;
   }
   .main section.table .container table tbody tr td.eduGroup ul li, .main section.table .container table tbody tr td.langGroup ul li {
+    /* margin-bottom: 1.5rem; */
     list-style: none;
   }
   .main section.table .container table tbody tr td.eduGroup .uniSubject {

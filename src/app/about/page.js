@@ -2,6 +2,55 @@ import Image from "next/image";
 import styles from "@/styles/about.module.css";
 
 export default function About() {
+  const web3Imgs = [];
+
+  const frontEndImgs = [
+    { name: "HTML5", img: "icons8-html-5.svg" },
+    { name: "CSS3", img: "icons8-css3.svg" },
+    { name: "JavaScript", img: "icons8-javascript.svg" },
+    { name: "React.js", img: "icons8-react-native.svg" },
+    { name: "Next.js", img: "icons8-nextjs.svg" },
+  ];
+
+  const backEndImgs = [
+    { name: "Node.js", img: "icons8-nodejs.svg" },
+    { name: "MongoDB", img: "icons8-mongodb.svg" },
+    { name: "SQL", img: "sql-database-sql-azure.svg" },
+  ];
+
+  const othersImgs = [
+    { name: "SAP ERP", img: "icons8-sap.svg" },
+    { name: "Python", img: "icons8-python.svg" },
+    { name: "Git", img: "icons8-git.svg" },
+  ];
+
+  const eduInfos = [
+    {
+      school: "University of Leeds",
+      degree: "MSc, Business Analytics and Decision Sciences",
+      country: "UK",
+      year: "2021-2022",
+    },
+    {
+      school: "National Chung Hsing University",
+      degree: "BSc, Civil Engineering",
+      country: "Taiwan",
+      year: "2012-2017",
+    },
+    {
+      school: "National Chung Hsing University",
+      degree: "BSc (Hons), Electrical Engineering",
+      country: "Taiwan",
+      year: "2015-2017",
+    },
+  ];
+
+  const languages = [
+    { name: "English", level: "Fluently" },
+    { name: "Chinese", level: "Native" },
+    { name: "Spanish", level: "Beginner" },
+  ];
+
   return (
     <>
       <main className={styles.main}>
@@ -88,126 +137,52 @@ export default function About() {
                       <li>
                         <p>Front-end</p>
                         <div>
-                          <figure>
-                            <Image
-                              src="./Icons/icons8-html-5.svg"
-                              title="HTML5"
-                              alt="HTML5"
-                              width={48}
-                              height={48}
-                            />
-                            <figcaption>HTML5</figcaption>
-                          </figure>
-                          <figure>
-                            <Image
-                              src="./Icons/icons8-css3.svg"
-                              title="CSS3"
-                              alt="CSS"
-                              width={48}
-                              height={48}
-                            />
-                            <figcaption>CSS3</figcaption>
-                          </figure>
-                          <figure>
-                            <Image
-                              src="./Icons/icons8-javascript.svg"
-                              title="JavaScript"
-                              alt="JavaScript"
-                              width={48}
-                              height={48}
-                            />
-                            <figcaption>JavaScript</figcaption>
-                          </figure>
-                          <figure>
-                            <Image
-                              src="./Icons/icons8-react-native.svg"
-                              title="React"
-                              alt="React"
-                              width={48}
-                              height={48}
-                            />
-                            <figcaption>React.js</figcaption>
-                          </figure>
-                          <figure>
-                            <Image
-                              src="./Icons/icons8-nextjs.svg"
-                              title="Next.js"
-                              alt="Next.js"
-                              width={48}
-                              height={48}
-                            />
-                            <figcaption>Next.js</figcaption>
-                          </figure>
+                          {frontEndImgs.map((img) => (
+                            <figure>
+                              <Image
+                                src={`./Icons/${img.img}`}
+                                title={img.name}
+                                alt={img.name}
+                                width={48}
+                                height={48}
+                              />
+                              <figcaption>{img.name}</figcaption>
+                            </figure>
+                          ))}
                         </div>
                       </li>
                       <li>
                         <p>Back-end</p>
                         <div>
-                          <figure>
-                            <Image
-                              src="./Icons/icons8-nodejs.svg"
-                              title="Node.js"
-                              alt="Node.js"
-                              width={48}
-                              height={48}
-                            />
-                            <figcaption>Node.js</figcaption>
-                          </figure>
-                          <figure>
-                            <Image
-                              src="./Icons/icons8-mongodb.svg"
-                              title="MongoDB"
-                              alt="MongoDB"
-                              width={48}
-                              height={48}
-                            />
-                            <figcaption>MongoDB</figcaption>
-                          </figure>
-                          <figure>
-                            <Image
-                              src="./Icons/sql-database-sql-azure.svg"
-                              title="SQL"
-                              alt="SQL"
-                              width={48}
-                              height={48}
-                            />
-                            <figcaption>SQL</figcaption>
-                          </figure>
+                          {backEndImgs.map((img) => (
+                            <figure>
+                              <Image
+                                src={`./Icons/${img.img}`}
+                                title={img.name}
+                                alt={img.name}
+                                width={48}
+                                height={48}
+                              />
+                              <figcaption>{img.name}</figcaption>
+                            </figure>
+                          ))}
                         </div>
                       </li>
                       <li>
                         <p>Others</p>
                         <div>
-                          <figure>
-                            <Image
-                              src="./Icons/icons8-sap.svg"
-                              title="SAP"
-                              alt="SAP"
-                              width={48}
-                              height={48}
-                            />
-                            <figcaption>SAP ERP</figcaption>
-                          </figure>
-                          <figure>
-                            <Image
-                              src="./Icons/icons8-python.svg"
-                              title="Python"
-                              alt="Python"
-                              width={48}
-                              height={48}
-                            />
-                            <figcaption>Python</figcaption>
-                          </figure>
-                          <figure>
-                            <Image
-                              src="./Icons/icons8-git.svg"
-                              title="Git"
-                              alt="Git"
-                              width={48}
-                              height={48}
-                            />
-                            <figcaption>Git</figcaption>
-                          </figure>
+                          {othersImgs.map((img) => (
+                            <figure>
+                              <Image
+                                src={`./Icons/${img.img}`}
+                                title={img.name}
+                                alt={img.name}
+                                width={48}
+                                height={48}
+                              />
+                              <figcaption>{img.name}</figcaption>
+                            </figure>
+                          ))}
                         </div>
                       </li>
                     </ul>
@@ -220,33 +195,17 @@ export default function About() {
                   </td>
                   <td className={styles.eduGroup}>
                     <ul>
-                      <li>
-                        <span className={styles.uniSubject}>
-                          MSc, Business Analytics and Decision Sciences
-                        </span>
-                        <br />
-                        <span className={styles.uniInfo}>
-                          University of Leeds, UK 2021-2022
-                        </span>
-                      </li>
-                      <li>
-                        <span className={styles.uniSubject}>
-                          BSc, Civil Engineering
-                        </span>
-                        <br />
-                        <span className={styles.uniInfo}>
-                          National Chung Hsing University, Taiwan 2012-2017
-                        </span>
-                      </li>
-                      <li>
-                        <span className={styles.uniSubject}>
-                          BSc (Hons), Electrical Engineering
-                        </span>
-                        <br />
-                        <span className={styles.uniInfo}>
-                          National Chung Hsing University, Taiwan 2015-2017
-                        </span>
-                      </li>
+                      {eduInfos.map((info) => (
+                        <li>
+                          <span className={styles.uniSubject}>
+                            {info.degree}
+                          </span>
+                          <br />
+                          <span className={styles.uniInfo}>
+                            {info.school}, {info.country} {info.year}
+                          </span>
+                        </li>
+                      ))}
                     </ul>
                   </td>
                 </tr>
@@ -257,9 +216,12 @@ export default function About() {
                   </td>
                   <td className={styles.langGroup}>
                     <ul>
-                      <li>English: Fluently</li>
-                      <li>Chinese: Native</li>
-                      <li>Spanish: Beginner</li>
+                      {languages.map((lang) => (
+                        <li>
+                          <span className={styles.langName}>{lang.name}: </span>
+                          <span className={styles.langLevel}>{lang.level}</span>
+                        </li>
+                      ))}
                     </ul>
                   </td>
                 </tr>

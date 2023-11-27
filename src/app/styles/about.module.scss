@@ -62,7 +62,7 @@ section.table {
               list-style-position: outside;
               margin-left: 10px;
               li {
-                margin-bottom: 0.5em;
+                margin-bottom: 1em;
               }
             }
           }
@@ -86,7 +86,14 @@ section.table {
             font-style: italic;
             font-size: 14px;
           }
+
+          &.intsGroup {
+            p {
+              margin-bottom: 1rem;
+            }
+          }
         }
+
         &:hover {
           background-color: #ffd2b8;
         }
@@ -153,6 +160,7 @@ section.picture {
                   li {
                     width: 100%;
                     text-align: center;
+                    margin-bottom: 1.5rem;
 
                     p.roleName,
                     p.roleInfo {
@@ -162,6 +170,9 @@ section.picture {
 
                   .subListGroup li {
                     text-align: left;
+                    li {
+                      /* margin-bottom: 0.5rem; */
+                    }
                   }
                 }
 
@@ -181,7 +192,7 @@ section.picture {
                     flex-direction: column;
                     li {
                       list-style: none;
-                      margin-bottom: 1rem;
+                      /* margin-bottom: 1.5rem; */
                       p {
                         font-weight: 600;
                       }
@@ -199,6 +210,7 @@ section.picture {
                 &.langGroup {
                   ul {
                     li {
+                      /* margin-bottom: 1.5rem; */
                       list-style: none;
                     }
                   }

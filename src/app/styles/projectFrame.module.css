@@ -51,6 +51,7 @@
 }
 .container .cardDescrip {
   padding: 1.5em;
+  font-size: 1em;
 }
 .container .cardLinks div {
   display: inline-flex;
@@ -74,6 +75,9 @@
   .container {
     text-align: center;
   }
+  .container .cardImg {
+    width: 85%;
+  }
   .container .cardName {
     padding: 0.8em;
   }
@@ -87,9 +91,21 @@
   .container {
     text-align: center;
   }
+  .container .cardImg {
+    width: 90%;
+  }
+  .container .cardSkills {
+    font-size: 0.75em;
+  }
+  .container .cardDescrip {
+    font-size: 0.875em;
+  }
   .container .cardLinks div {
     display: flex;
     flex-direction: column;
     width: 8em;
+  }
+  .container .cardLinks div a {
+    font-size: 1em;
   }
 }/*# sourceMappingURL=projectFrame.module.css.map */

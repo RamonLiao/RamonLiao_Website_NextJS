@@ -4,7 +4,7 @@
   justify-content: center;
   height: 100vh;
   background: #f5f9ff;
-  padding: 20px;
+  padding: 1.25rem;
 }
 
 .container {
@@ -101,7 +101,7 @@
   padding: 6px 20px;
   border: none;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 1rem;
   cursor: pointer;
 }
 
@@ -121,6 +121,11 @@
   transition: all 0.3s ease;
 }
 
+@media screen and (max-width: 70rem) {
+  .container {
+    height: 85vh;
+  }
+}
 @media screen and (max-width: 60rem) {
   .container {
     margin: 0;
@@ -133,8 +138,7 @@
   .container {
     max-width: 90%;
     flex-direction: column;
-    margin-inline: 0;
-    height: 100vh;
+    height: 90vh;
   }
   .gradientSection {
     height: 30vh;
@@ -164,13 +168,13 @@
   }
   .formSection {
     flex: 1;
-    padding: 1rem;
+    padding: 1.5rem;
   }
   .formSection h2 {
     font-size: 1.25rem;
   }
   .formSection button {
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 36.25rem) {
@@ -206,5 +210,10 @@
   }
   .gradientSection {
     display: none;
+  }
+}
+@media screen and (max-width: 25rem) {
+  .main {
+    width: 100vw;
   }
 }/*# sourceMappingURL=contact.module.css.map */
