@@ -26,18 +26,21 @@ export default function About() {
 
   const eduInfos = [
     {
+      id: "1",
       school: "University of Leeds",
       degree: "MSc, Business Analytics and Decision Sciences",
       country: "UK",
       year: "2021-2022",
     },
     {
+      id: "2",
       school: "National Chung Hsing University",
       degree: "BSc, Civil Engineering",
       country: "Taiwan",
       year: "2012-2017",
     },
     {
+      id: "3",
       school: "National Chung Hsing University",
       degree: "BSc (Hons), Electrical Engineering",
       country: "Taiwan",
@@ -138,7 +141,7 @@ export default function About() {
                         <p>Front-end</p>
                         <div>
                           {frontEndImgs.map((img) => (
-                            <figure>
+                            <figure key={img.name}>
                               <Image
                                 src={`./Icons/${img.img}`}
                                 title={img.name}
@@ -155,7 +158,7 @@ export default function About() {
                         <p>Back-end</p>
                         <div>
                           {backEndImgs.map((img) => (
-                            <figure>
+                            <figure key={img.name}>
                               <Image
                                 src={`./Icons/${img.img}`}
                                 title={img.name}
@@ -172,7 +175,7 @@ export default function About() {
                         <p>Others</p>
                         <div>
                           {othersImgs.map((img) => (
-                            <figure>
+                            <figure key={img.name}>
                               <Image
                                 src={`./Icons/${img.img}`}
                                 title={img.name}
@@ -196,7 +199,7 @@ export default function About() {
                   <td className={styles.eduGroup}>
                     <ul>
                       {eduInfos.map((info) => (
-                        <li>
+                        <li key={info.id}>
                           <span className={styles.uniSubject}>
                             {info.degree}
                           </span>
@@ -217,7 +220,7 @@ export default function About() {
                   <td className={styles.langGroup}>
                     <ul>
                       {languages.map((lang) => (
-                        <li>
+                        <li key={lang.name}>
                           <span className={styles.langName}>{lang.name}: </span>
                           <span className={styles.langLevel}>{lang.level}</span>
                         </li>
