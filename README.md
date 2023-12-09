@@ -2,53 +2,53 @@
 
 This website is built under Next.js framework with App Router. It is deployed on a decentralised network, IPFS (InterPlanetary File System) and configured with personal ENS domain on Ethereum blockchain.
 
-This project is developed with three sections:
+# Project Architecture
 
-1. **dApp Framework ( Next.js )**
+## 1. **dApp Framework ( Next.js )**
 
-   This repo has two branches:
+This repo has two branches:
 
-   - `master`
+- `master`
 
-     The _master_ branch is the main application with a few spectial features under Next.js framework, such as intercepting routes.
+  The _master_ branch is the main application with a few spectial features under Next.js framework, such as intercepting routes.
 
-     - [GitHub link](https://github.com/RamonLiao/RamonLiao_Website_NextJS/)
-     - [Demo Link](https://ramonliao.vercel.app/)
+  - [GitHub link](https://github.com/RamonLiao/RamonLiao_Website_NextJS/)
+  - [Demo Link](https://ramonliao.vercel.app/)
 
-   - `output_export`
+- `output_export`
 
-     The _output_export_ is adapted to be exported and uploaded to [IPFS](#1-ipfs), which means that the application is diplayed as a static site or Single-Page Application (SPA) rather than the dynamic one.
+  The _output_export_ is adapted to be exported and uploaded to [IPFS](#1-ipfs), which means that the application is diplayed as a static site or Single-Page Application (SPA) rather than the dynamic one.
 
-     By configuring [static export](https://nextjs.org/docs/app/building-your-application/deploying/static-exports) in `next.config.js`, Next.js generates individual HTML files for each route during its build process. This approach helps in avoiding excessive client-side JavaScript loading, reducing bundle sizes, and facilitating quicker page loading times when running `npm run build`.
+  By configuring [static export](https://nextjs.org/docs/app/building-your-application/deploying/static-exports) in `next.config.js`, Next.js generates individual HTML files for each route during its build process. This approach helps in avoiding excessive client-side JavaScript loading, reducing bundle sizes, and facilitating quicker page loading times when running `npm run build`.
 
-     ```JavaScript
-     /**
-      * @type {import('next').NextConfig}
-      */
-      const nextConfig = {
-         output: 'export',
-      }
+  ```JavaScript
+  /**
+   * @type {import('next').NextConfig}
+   */
+   const nextConfig = {
+      output: 'export',
+   }
 
-      module.exports = nextConfig
-     ```
+   module.exports = nextConfig
+  ```
 
-     - [GitHub Link](https://github.com/RamonLiao/RamonLiao_Website_NextJS/tree/output_export)
-     - [Demo Link](https://ramonliao.on.fleek.co/) (via Fleek platform)
-     - [Demo Link](https://ramonliao.eth.link/) (deployed on IPFS and accessed via Cloudfare) - _`ramonliao.eth.link`_
-     - [Demo Link](https://ramonliao.eth.limo/) (deployed on IPFS and accessed via DAO) - _`ramonliao.eth.limo`_
+  - [GitHub Link](https://github.com/RamonLiao/RamonLiao_Website_NextJS/tree/output_export)
+  - [Demo Link](https://ramonliao.on.fleek.co/) (via Fleek platform)
+  - [Demo Link](https://ramonliao.eth.link/) (deployed on IPFS and accessed via Cloudfare) - _`ramonliao.eth.link`_
+  - [Demo Link](https://ramonliao.eth.limo/) (deployed on IPFS and accessed via DAO) - _`ramonliao.eth.limo`_
 
-2. **Web3 Domain (`ENS`)**
+## 2. **Web3 Domain (`ENS`)**
 
-   Registered a custom domain on Ethereum blockchain via ENS service.
+Registered a custom domain on Ethereum blockchain via ENS service.
 
-   - [Registeration link](https://app.ens.domains/)
+- [Registeration link](https://app.ens.domains/)
 
-3. **Cloud Platform and Decentralized Performance**
+## 3. **Cloud Platform and Decentralized Performance**
 
-   - [Fleek](https://fleek.co/)
-   - [dAppling](https://dappling.network/)
+- [Fleek](https://fleek.co/)
+- [dAppling](https://dappling.network/)
 
-   _(This app is realised by using Fleek platform.)_
+_(This app is realised by using Fleek platform.)_
 
 <br>
 
