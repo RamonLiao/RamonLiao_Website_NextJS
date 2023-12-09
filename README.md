@@ -97,9 +97,12 @@ A Content Identifier (CID) serves as a reference for data stored in IPFS (InterP
 Briefly, the Ethereum Name Service (ENS) functions to translate human-readable names like 'alice.eth' into machine-readable identifiers such as Ethereum addresses or content hashes. It also facilitates 'reverse resolution', linking metadata like canonical names to Ethereum addresses. While ENS shares objectives with the Internet's Domain Name Service (DNS), its architecture is distinct due to leveraging the Ethereum blockchain. Operating on a hierarchical domain system akin to DNS, ENS grants domain owners full control over their subdomains.
 
 1. [ENS Architecture](https://docs.ens.domains/#ens-architecture)
-   ![img](/public/images/ENS-Architecture.webp)
+
+   ![img](/public/images/ENS-Architecture.jpg)
+
 2. [ENS Two-Step Process](https://docs.ens.domains/#ens-architecture)
-   ![img](/public/images/ENS-two-step-process.png)
+
+   ![img](/public/images/ENS-two-step-process.jpg)
 
 ## 5. \*.ETH.LINK vs \*.ETH.LIMO
 
