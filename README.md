@@ -2,9 +2,11 @@
 
 This website is built under Next.js framework with App Router. It is deployed on a decentralised network, IPFS (InterPlanetary File System) and configured with personal ENS domain on Ethereum blockchain.
 
-# Project Architecture
+<br>
 
-## 1. **dApp Framework ( Next.js )**
+## Project Architecture
+
+### 1. **dApp Framework ( Next.js )**
 
 This repo has two branches:
 
@@ -37,13 +39,13 @@ This repo has two branches:
   - [Demo Link](https://ramonliao.eth.link/) (deployed on IPFS and accessed via Cloudfare) - _`ramonliao.eth.link`_
   - [Demo Link](https://ramonliao.eth.limo/) (deployed on IPFS and accessed via DAO) - _`ramonliao.eth.limo`_
 
-## 2. **Web3 Domain (`ENS`)**
+### 2. **Web3 Domain (`ENS`)**
 
 Registered a custom domain on Ethereum blockchain via ENS service.
 
 - [Registeration link](https://app.ens.domains/)
 
-## 3. **Cloud Platform and Decentralized Performance**
+### 3. **Cloud Platform and Decentralized Performance**
 
 - [Fleek](https://fleek.co/)
 - [dAppling](https://dappling.network/)
@@ -52,9 +54,9 @@ _(This app is realised by using Fleek platform.)_
 
 <br>
 
-# Terms
+## Terms
 
-## 1. IPFS
+### 1. IPFS
 
 IPFS represents a set of protocols centered on content addressing and peer-to-peer networking, offering various implementations due to its open-source nature. Its primary purpose is decentralized data publishing, accommodating diverse applications such as sharing files, directories, and websites in a distributed manner.
 
@@ -74,21 +76,21 @@ The primary responsibilities encompass representing and addressing data, routing
 
 Notably, IPFS employs content addressing to reference data based on its contents rather than relying on traditional location-based addressing like IP addresses.
 
-## 2. IPNS
+### 2. IPNS
 
 IPNS, the InterPlanetary Name System, enables the creation of adaptable pointers called names or IPNS names, pointing to CIDs. These names serve as links that can be modified over time while ensuring the verification of content addressing remains intact. ([link](https://docs.ipfs.tech/concepts/ipns/#interplanetary-name-system-ipns))
 
-## 2. IPFS vs IPNS
+### 2. IPFS vs IPNS
 
 > IPNS names are essentially pointers (IPNS names) to pointers (IPFS CIDs) whereas IPFS CIDs are immutable (because they're derived from the content) pointers to content.
 >
 > _- From [IPFS Docs](https://docs.ipfs.tech/concepts/ipns/)_
 
-## 3. Content Identifiers (CIDs)
+### 3. Content Identifiers (CIDs)
 
 A Content Identifier (CID) serves as a reference for data stored in IPFS (InterPlanetary File System). It doesn't specify the content's storage location but acts as an address based on the content itself. CIDs are concise and don't vary in length based on the size of the content they represent. ([link](https://docs.ipfs.tech/concepts/content-addressing/))
 
-## 4. ENS
+### 4. ENS
 
 > The Ethereum Name Service (ENS) is a distributed, open, and extensible naming system based on the Ethereum blockchain.
 >
@@ -96,21 +98,21 @@ A Content Identifier (CID) serves as a reference for data stored in IPFS (InterP
 
 Briefly, the Ethereum Name Service (ENS) functions to translate human-readable names like 'alice.eth' into machine-readable identifiers such as Ethereum addresses or content hashes. It also facilitates 'reverse resolution', linking metadata like canonical names to Ethereum addresses. While ENS shares objectives with the Internet's Domain Name Service (DNS), its architecture is distinct due to leveraging the Ethereum blockchain. Operating on a hierarchical domain system akin to DNS, ENS grants domain owners full control over their subdomains.
 
-1. [ENS Architecture](https://docs.ens.domains/#ens-architecture)
+#### 1. [ENS Architecture](https://docs.ens.domains/#ens-architecture)
 
-   ![img](/public/images/ENS-Architecture.jpg)
+![img](/public/images/ENS-Architecture.jpg)
 
-2. [ENS Two-Step Process](https://docs.ens.domains/#ens-architecture)
+#### 2. [ENS Two-Step Process](https://docs.ens.domains/#ens-architecture)
 
-   ![img](/public/images/ENS-two-step-process.jpg)
+![img](/public/images/ENS-two-step-process.jpg)
 
-## 5. \*.ETH.LINK vs \*.ETH.LIMO
+### 5. \*.ETH.LINK vs \*.ETH.LIMO
 
-### 1. .ETH.LINK
+#### 1. .ETH.LINK
 
 Eth.link serves as a centralized gateway for accessing ENS information through DNS, overseen by Cloudflare, a company specializing in CDNs (Content Delivery Networks) and DDoS (Distributed Denial-of-Service) protection services.
 
-### 2. .ETH.LIMO
+#### 2. .ETH.LIMO
 
 Eth.limo represents a decentralized substitute for eth.link. Like eth.link, eth.limo employs a wildcarded DNS record, \*.eth.limo. Yet, in contrast to being overseen by a singular entity, it operates through a DAO (Decentralized Autonomous Organization), where its operations are governed by a smart contract, preventing unilateral alterations.
 
@@ -122,7 +124,7 @@ Eth.limo represents a decentralized substitute for eth.link. Like eth.link, eth.
 >
 > _- From [ETH.LIMO Docs](https://eth.limo/#what-is-ethlimo)_
 
-### Ref
+#### Ref
 
 1. [ETH.LIMO Docs](https://eth.limo/#what-is-ethlimo)
 2. [Using Eth.Limo as an Alternative to Eth.Link in Fleek](https://blog.fleek.co/posts/eth-limo-alternative-eth-link)
@@ -130,9 +132,9 @@ Eth.limo represents a decentralized substitute for eth.link. Like eth.link, eth.
 
 <br>
 
-# Debugs
+## Debugs
 
-## 1. To deploy the app to Fleek, during the phase of `"npm build"`, an uncaughtException Error occured.
+### 1. To deploy the app to Fleek, during the phase of `"npm build"`, an uncaughtException Error occured.
 
 ```console
 $ npm WARN EBADENGINE Unsupported engine {
@@ -150,7 +152,7 @@ $ npm WARN EBADENGINE current: { node: 'v16.4.2', npm: '7.18.1' }
 $ npm WARN EBADENGINE }
 ```
 
-### Cause:
+#### Cause:
 
 This app is developed with Next.js framework. Therefore, I chose the docker image `fleek/next-js` or `fleek/next-js:node-16` suggested by Fleek's tutorial [article](https://blog.fleek.co/posts/fleek-nextJS).
 
@@ -161,19 +163,19 @@ $ npm WARN EBADENGINE required: { node: '>=16.8.0' },
 $ npm WARN EBADENGINE current: { node: 'v16.4.2', npm: '7.18.1' }
 ```
 
-### Solution:
+#### Solution:
 
 1.  Check the version of node engine of Next.js in `package.json` and upgrade/downgrade the version of Next.js.
 
 2.  Choose the docker image [`fleek/node`](<(https://hub.docker.com/r/fleek/node/tags)>) instead. It keeps being updated to the latest version of node engine.
 
-### Ref:
+#### Ref:
 
 1.  [Error while trying to deploy to fleek, uncaughtException Error [ERR_UNKNOWN_BUILTIN_MODULE]: No such built-in module: node:stream/web](https://github.com/smartcontractkit/full-blockchain-solidity-course-js/discussions/6118)
 
 <br>
 
-## 2. Google Font couldn't be found with module `"next/font/google"` during build time.
+### 2. Google Font couldn't be found with module `"next/font/google"` during build time.
 
 ```console
 $ FetchError: request to https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap failed, reason:
@@ -202,7 +204,7 @@ $ > Build failed because of webpack errors
 $ Error occured during the build.
 ```
 
-### Cause:
+#### Cause:
 
 During the build process, CSS and font files are downloaded and self-hosted along with other static assets. This prevents the browser from making requests to Google for these resources ([link](https://nextjs.org/docs/app/building-your-application/optimizing/fonts#google-fonts)).
 
@@ -210,7 +212,7 @@ However, with the configuration of static export in `next.config.js`, an error o
 
 _( Still unsure why this happened. )_
 
-### Solution:
+#### Solution:
 
 1.  Download font files from [Google Fonts](https://fonts.google.com/) to the project folder and use `next/font/local` instead of `next/font/google` in `layout.js`
 
@@ -236,7 +238,7 @@ _( Still unsure why this happened. )_
 
 <br>
 
-## 3. `"next export"` does not work with App Router
+### 3. `"next export"` does not work with App Router
 
 ```console
 $ > next export
@@ -244,19 +246,19 @@ $ ⨯ "next export" does not work with App Router. Please use "output: export" i
 $ Error occured during the build.
 ```
 
-### Solution:
+#### Solution:
 
 1.  Set up `"output: export"` in `next.config.js`.
 
 <br>
 
-## 4. The app includes dynamic routes and client side components. An error occured during build time.
+### 4. The app includes dynamic routes and client side components. An error occured during build time.
 
 ```console
 output: 'export' with use client in dynamic routes doesn't work
 ```
 
-### Solution (Workaround):
+#### Solution (Workaround):
 
 1.  Move 'use client' and client-side code into component ([link](https://github.com/vercel/next.js/issues/48022#issuecomment-1680182909))
 
@@ -317,7 +319,7 @@ output: 'export' with use client in dynamic routes doesn't work
     export default Foo
     ```
 
-### Ref:
+#### Ref:
 
 1.  Next.js Docs: [Unsupported Features](https://nextjs.org/docs/app/building-your-application/deploying/static-exports#unsupported-features) for static export.
 2.  [[NEXT-1030] output: 'export' with use client in dynamic routes doesn't work #48022](https://github.com/vercel/next.js/issues/48022#issuecomment-1688599391)
@@ -325,7 +327,7 @@ output: 'export' with use client in dynamic routes doesn't work
 
    <br>
 
-## 5. Next.js App Router encountered build error due to dynamic routes are missing `"generateStaticParams()"`.
+### 5. Next.js App Router encountered build error due to dynamic routes are missing `"generateStaticParams()"`.
 
 ```console
 $ > Build error occurred
@@ -337,7 +339,7 @@ $ > Build error occurred
 $ Error: Page "/projects/(.)detail/[id]/[projectName]" is missing "generateStaticParams()" so it cannot be used with "output: export" config.
 ```
 
-### Solution:
+#### Solution:
 
 1.  Refer to [Debug 4](#4-the-app-includes-dynamic-routes-and-client-side-components-an-error-occured-during-build-time)
 
@@ -370,7 +372,7 @@ $ Error: Page "/projects/(.)detail/[id]/[projectName]" is missing "generateStati
     }
     ```
 
-### Ref:
+#### Ref:
 
 1. [[NEXT-1550] App Router with output: export does not support useParams() on client #54393](https://github.com/vercel/next.js/issues/54393#issuecomment-1778082399)
 2. [generateStaticParams does not work when output: "export" #47485](https://github.com/vercel/next.js/issues/47485)
@@ -381,7 +383,7 @@ $ Error: Page "/projects/(.)detail/[id]/[projectName]" is missing "generateStati
 
 <br>
 
-## 6. Images are missing on `next build & next export`.
+### 6. Images are missing on `next build & next export`.
 
 After configuring `"output: export"`, all images implemented by `next/image` are missing.
 
@@ -389,7 +391,7 @@ After configuring `"output: export"`, all images implemented by `next/image` are
 $ Failed to load resource: the server responded with a status of 404 (Not Found)
 ```
 
-### Cause:
+#### Cause:
 
 From Next.js Docs:
 
@@ -399,7 +401,7 @@ From Next.js Docs:
 >
 > This is because Next.js optimizes images on-demand, as users request them (not at build time).
 
-### Solution:
+#### Solution:
 
 Refer to the Next.js Docs - [Export with Image Optimization API
 ](https://nextjs.org/docs/messages/export-image-api):
