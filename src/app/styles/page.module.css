@@ -30,17 +30,9 @@
   transform: translateY(-50%);
 }
 
-.backgroundImg {
-  position: absolute;
-  z-index: -10;
-}
-
 @media screen and (max-width: 1114px) {
   .main {
     flex-direction: column;
-  }
-  .main section.right {
-    /* display: block; */
   }
   .main section.right img {
     min-width: 250px;
@@ -51,11 +43,90 @@
     transform: translateY(-120%);
   }
 }
-@media screen and (max-width: 680px) {
-  .main section.right {
-    /* display: block; */
+@media screen and (max-width: 900px) {
+  .main section.left {
+    padding: 2em 3em;
   }
   .main section.right img {
-    right: 20vw;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+  }
+  .main .bkgContainer img {
+    display: none;
+  }
+  .main .bkgContainer .bkgRound {
+    background-color: #e08958;
+    border-radius: 50%;
+    position: absolute;
+    min-width: 250px;
+    min-height: 250px;
+    width: 30vw;
+    height: 30vw;
+    right: 30vw;
+    transform: translateY(-150%);
+    z-index: -1;
+  }
+}
+@media screen and (max-width: 680px) {
+  .main section.left {
+    padding: 2em 2em;
+  }
+  .main section.left h1 {
+    font-size: 2.5em;
+  }
+  .main section.left p {
+    font-size: 1.2em;
+  }
+  .main section.right {
+    position: relative;
+    transform: translateY(-25%);
+  }
+  .main section.right img {
+    right: 25vw;
+  }
+  .main .bkgContainer {
+    position: relative;
+  }
+  .main .bkgContainer .bkgRound {
+    right: 25vw;
+    transform: translateY(-200%);
+  }
+}
+@media screen and (max-width: 480px) {
+  .main section.left {
+    padding: 2em 1.5em;
+  }
+  .main section.right {
+    position: relative;
+    transform: translateY(-35%);
+  }
+  .main section.right img {
+    right: 25vw;
+    min-width: 200px;
+    min-height: 200px;
+    width: 35vw;
+    height: 35vw;
+  }
+  .main .bkgContainer {
+    position: relative;
+  }
+  .main .bkgContainer .bkgRound {
+    right: 25vw;
+    min-width: 200px;
+    min-height: 200px;
+    width: 35vw;
+    height: 35vw;
+    transform: translateY(-250%);
+  }
+}
+@media screen and (max-width: 400px) {
+  .main section.right {
+    position: relative;
+    transform: translateY(-15%);
+  }
+  .main .bkgContainer {
+    position: relative;
+  }
+  .main .bkgContainer .bkgRound {
+    transform: translateY(-210%);
   }
 }/*# sourceMappingURL=page.module.css.map */

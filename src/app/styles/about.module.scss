@@ -4,77 +4,99 @@
   flex-wrap: wrap;
 }
 
-.table {
+section.table {
   flex: 3 1 600px;
   padding: 1.5rem 5rem;
-  table {
-    border-collapse: collapse;
-    tr {
-      border-bottom: 2px solid gray;
-      transition: all 0.2s ease;
-      td {
-        padding: 1em;
 
-        ul {
-          /* list-style-position: inside; */
-          margin-left: 1em;
-          li {
-            margin-bottom: 0.5em;
-          }
+  .container {
+    table {
+      border-collapse: collapse;
+      tr {
+        border-bottom: 2px solid gray;
+        transition: all 0.2s ease;
+
+        &:first-child {
+          border-top: 2px solid gray;
         }
 
-        ul.listGroup {
-          list-style: none;
-
-          li {
-            margin-bottom: 1em;
+        td {
+          padding: 1em;
+          &:first-child {
+            width: 20%;
           }
-
-          li p {
-            margin: 0.5em 0;
-
-            &.roleName {
-              font-weight: 600;
-            }
-
-            &.roleInfo {
-              font-style: italic;
-              font-size: 14px;
-            }
+          &:second-child {
+            width: 80%;
           }
-
-          li ul.subListGroup {
-            list-style-type: "- ";
-            list-style-position: outside;
-            margin-left: 10px;
+          ul {
+            margin-left: 1em;
             li {
-              margin-bottom: 0.5em;
+              margin-bottom: 1em;
             }
+          }
+
+          ul.listGroup {
+            list-style: none;
+
+            li {
+              margin-bottom: 1em;
+            }
+
+            li p {
+              margin: 0.5em 0;
+
+              &.roleName {
+                font-weight: 600;
+              }
+
+              &.roleInfo {
+                font-style: italic;
+                font-size: 14px;
+              }
+            }
+
+            li ul.subListGroup {
+              list-style-type: "- ";
+              list-style-position: outside;
+              margin-left: 10px;
+              li {
+                margin-bottom: 1em;
+              }
+            }
+          }
+
+          &.skillsGroup {
+            ul li {
+              margin-bottom: 1.2em;
+            }
+
+            ul li div {
+              display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+
+              figure {
+                display: block;
+                text-align: center;
+                font-size: 14px;
+                margin: 0.5em 0.5em;
+                min-width: 75px;
+              }
+            }
+            ul li p {
+              font-weight: 600;
+              margin-bottom: 0.5rem;
+            }
+          }
+
+          ul li span.uniInfo {
+            font-style: italic;
+            font-size: 14px;
           }
         }
 
-        &.skillsGroup {
-          ul li div {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-
-            figure {
-              display: block;
-              text-align: center;
-              font-size: 14px;
-              margin: 0.5em 0.5em;
-            }
-          }
+        &:hover {
+          background-color: #ffd2b8;
         }
-
-        ul li span.uniInfo {
-          font-style: italic;
-          font-size: 14px;
-        }
-      }
-      &:hover {
-        background-color: #ffd2b8;
       }
     }
   }
@@ -101,17 +123,121 @@ section.picture {
 }
 
 @media screen and (max-width: 1114px) {
-  main {
+  .main {
     section.picture {
       display: flex;
       justify-content: center;
       align-items: center;
       img {
-        width: 25vw;
+        width: 35vw;
+        height: 49vw;
         margin-bottom: 2rem;
       }
       div.orangeRect {
         display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    section.table {
+      padding: 1.5rem 1rem;
+      .container {
+        table {
+          tbody {
+            tr {
+              td {
+                display: block;
+                width: 100%;
+
+                ul {
+                  display: flex;
+                  flex-direction: column;
+                  margin-left: 0;
+
+                  li {
+                    width: 100%;
+                    text-align: center;
+                    margin-bottom: 1.5rem;
+
+                    p.roleName,
+                    p.roleInfo {
+                      text-align: center;
+                    }
+                  }
+
+                  .subListGroup li {
+                    text-align: left;
+                  }
+                }
+
+                &:first-child {
+                  padding-bottom: 0.5rem;
+                }
+
+                .aboutCategories {
+                  font-weight: 600;
+                  font-size: 1.25rem;
+                  text-align: center;
+                }
+
+                &.skillsGroup {
+                  ul {
+                    display: flex;
+                    flex-direction: column;
+                    li {
+                      list-style: none;
+                      margin-top: 0.5rem;
+                      margin-bottom: 1.5rem;
+                      /* p {
+                        font-weight: 600;
+                        margin-bottom: 0.5rem;
+                      } */
+                    }
+                  }
+                  ul li div {
+                    display: inline-flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: center;
+                  }
+                }
+
+                &.eduGroup,
+                &.langGroup {
+                  ul {
+                    li {
+                      list-style: none;
+                    }
+                  }
+                }
+
+                &.eduGroup {
+                  .uniSubject {
+                    font-weight: 500;
+                  }
+                }
+
+                &.intsGroup {
+                  text-align: center;
+                  p {
+                    margin-bottom: 1rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    section.picture {
+      img {
+        width: 50vw;
+        height: 70vw;
       }
     }
   }

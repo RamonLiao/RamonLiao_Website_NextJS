@@ -5,9 +5,7 @@
   justify-content: flex-start;
   align-items: center;
   width: 100vw;
-  /* border: 1px solid black; */
   border-radius: 15px;
-  /* margin: 1rem; */
   padding: 1rem;
 }
 .container .card {
@@ -52,9 +50,6 @@
   background-color: #e2caa8;
   font-size: 0.875em;
   height: 66px;
-  /* .cardSkillName {
-    background-color: lightskyblue;
-  } */
 }
 .container .card .cardBody .cardSkills div {
   display: inline-flex;
@@ -133,14 +128,25 @@
   }
   .container .card .cardBody .cardImg {
     padding: 0.7em;
+    width: 100%;
+    height: 80%;
+  }
+  .container .card .cardBody .cardImg .cardImgObj {
+    width: 100%;
+    height: 90%;
   }
   .container .card .cardBody .cardSkills {
     margin: -1em 1em 0.75em;
     padding: 0 0.5em;
     font-size: 0.7em;
-    height: 5em;
+    height: 22%;
+  }
+  .container .card .cardBody .cardSkills div {
+    display: inline-flex;
+    /* align-items: center; */
+    justify-content: center;
   }
   .container .card .cardBody .cardFeet {
-    top: 278px;
+    display: none;
   }
 }/*# sourceMappingURL=projects.module.css.map */

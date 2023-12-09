@@ -29,9 +29,13 @@ export default function Home() {
             alt="Selfie"
             width={100}
             height={100}
+            priority={true}
           />
         </section>
-        <BackgroundImg className={styles.backgroundImg} />
+        <div className={styles.bkgContainer}>
+          <BackgroundImg />
+          <div className={styles.bkgRound}></div>
+        </div>
       </main>
     </>
   );

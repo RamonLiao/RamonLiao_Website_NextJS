@@ -1,8 +1,3 @@
-// "use client";
-
-import styles from "@/styles/projectDetail.module.css";
-
-import ProjectFrame from "@/components/projectFrame";
 import ProjectsAll from "@/api/projects/projects.json";
 import ShowPage from "./showPage.js";
 
