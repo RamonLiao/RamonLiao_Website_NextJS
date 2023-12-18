@@ -12,9 +12,9 @@ export default function Home() {
             Yu-Cheng Liao.
           </h1>
           <p>
-            I am a full-stack developer, a dream achiever, and a blockchain
-            believer. I believe that technology can turn the impossible into
-            possible!
+            I am a full-stack developer driven by ambitious goals and a strong
+            belief in blockchain tech. I am convinced that technology can turn
+            the impossible into possible!
           </p>
           <p>
             And don&apos;t forget to keep positive and smiling to this beautiful

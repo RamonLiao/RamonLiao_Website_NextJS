@@ -84,6 +84,36 @@ export default function About() {
                   <td>
                     <ul className={styles.listGroup}>
                       <li>
+                        <p className={styles.roleName}>Web3 Contributor</p>
+                        <p className={styles.roleInfo}>
+                          Contract, United Kingdom, June 2022 - Present
+                        </p>
+                        <ul className={styles.subListGroup}>
+                          <li>
+                            Conducted in-depth research on crypto economics to
+                            enhance the environment of Web3
+                          </li>
+                          <li>
+                            Engaged as a Web3 Developer within a blockchain
+                            project, constructing a decentralized application
+                            (DApp).
+                          </li>
+                          <li>
+                            Created Hardhat-based side projects with thorough
+                            test coverage
+                          </li>
+                          <li>
+                            Developed a smart contract managing community
+                            governance (voting and staking), treasury (deposit
+                            and withdrawal), and membership (mint and burn)
+                          </li>
+                          <li>
+                            Engineered NFT smart contracts for trading, minting,
+                            and burning.
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
                         <p className={styles.roleName}>
                           Associate System Analyst
                         </p>
@@ -283,7 +313,7 @@ export default function About() {
                     <p className={styles.aboutCategories}>Interests</p>
                   </td>
                   <td className={styles.intsGroup}>
-                    <p>Reading, Workout, Investment, Blockchain, Web3</p>
+                    <p>Reading, Workout, Investment, Blockchain, Web3, ERP</p>
                   </td>
                 </tr>
               </tbody>
