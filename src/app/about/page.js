@@ -2,20 +2,35 @@ import Image from "next/image";
 import styles from "@/styles/about.module.css";
 
 export default function About() {
-  const web3Imgs = [];
+  const web3Imgs = [
+    { name: "Solidity", img: "icons8-solidity.svg" },
+    { name: "Hardhat", img: "hardhat.svg" },
+    { name: "Ethers.js", img: "ethers.svg" },
+    { name: "Wagmi", img: "wagmish.svg" },
+    { name: "RainbowKit", img: "rainbow.svg" },
+    { name: "NFT", img: "nft-logo.svg" },
+  ];
 
   const frontEndImgs = [
     { name: "HTML5", img: "icons8-html-5.svg" },
     { name: "CSS3", img: "icons8-css3.svg" },
     { name: "JavaScript", img: "icons8-javascript.svg" },
+    { name: "TypeScript", img: "icons8-typescript.svg" },
+    { name: "Tailwind CSS", img: "Tailwind_CSS_Logo.svg" },
     { name: "React.js", img: "icons8-react-native.svg" },
     { name: "Next.js", img: "icons8-nextjs.svg" },
+    { name: "Redux", img: "redux.svg" },
   ];
 
   const backEndImgs = [
     { name: "Node.js", img: "icons8-nodejs.svg" },
     { name: "MongoDB", img: "icons8-mongodb.svg" },
     { name: "SQL", img: "sql-database-sql-azure.svg" },
+  ];
+
+  const testImgs = [
+    { name: "mocha", img: "mocha.svg" },
+    { name: "chai", img: "chai.svg" },
   ];
 
   const othersImgs = [
@@ -68,6 +83,36 @@ export default function About() {
                   </td>
                   <td>
                     <ul className={styles.listGroup}>
+                      <li>
+                        <p className={styles.roleName}>Web3 Contributor</p>
+                        <p className={styles.roleInfo}>
+                          Contract, United Kingdom, June 2022 - Present
+                        </p>
+                        <ul className={styles.subListGroup}>
+                          <li>
+                            Conducted in-depth research on crypto economics to
+                            enhance the environment of Web3
+                          </li>
+                          <li>
+                            Engaged as a Web3 Developer within a blockchain
+                            project, constructing a decentralized application
+                            (DApp).
+                          </li>
+                          <li>
+                            Created Hardhat-based side projects with thorough
+                            test coverage
+                          </li>
+                          <li>
+                            Developed a smart contract managing community
+                            governance (voting and staking), treasury (deposit
+                            and withdrawal), and membership (mint and burn)
+                          </li>
+                          <li>
+                            Engineered NFT smart contracts for trading, minting,
+                            and burning.
+                          </li>
+                        </ul>
+                      </li>
                       <li>
                         <p className={styles.roleName}>
                           Associate System Analyst
@@ -172,6 +217,40 @@ export default function About() {
                         </div>
                       </li>
                       <li>
+                        <p>Testing</p>
+                        <div>
+                          {testImgs.map((img) => (
+                            <figure key={img.name}>
+                              <Image
+                                src={`./Icons/${img.img}`}
+                                title={img.name}
+                                alt={img.name}
+                                width={48}
+                                height={48}
+                              />
+                              <figcaption>{img.name}</figcaption>
+                            </figure>
+                          ))}
+                        </div>
+                      </li>
+                      <li>
+                        <p>Web3</p>
+                        <div>
+                          {web3Imgs.map((img) => (
+                            <figure key={img.name}>
+                              <Image
+                                src={`./Icons/${img.img}`}
+                                title={img.name}
+                                alt={img.name}
+                                width={48}
+                                height={48}
+                              />
+                              <figcaption>{img.name}</figcaption>
+                            </figure>
+                          ))}
+                        </div>
+                      </li>
+                      <li>
                         <p>Others</p>
                         <div>
                           {othersImgs.map((img) => (
@@ -234,7 +313,7 @@ export default function About() {
                     <p className={styles.aboutCategories}>Interests</p>
                   </td>
                   <td className={styles.intsGroup}>
-                    <p>Reading, Workout, Investment, Blockchain, Web3</p>
+                    <p>Reading, Workout, Investment, Blockchain, Web3, ERP</p>
                   </td>
                 </tr>
               </tbody>

@@ -6,4 +6,20 @@
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 70vw;
+  }
+}
+@media screen and (max-width: 780px) {
+  .container {
+    width: 80vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container {
+    width: 90vw;
+  }
 }/*# sourceMappingURL=projectDetail.module.css.map */

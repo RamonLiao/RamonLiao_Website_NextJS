@@ -96,6 +96,7 @@
     section.right {
       position: relative;
       transform: translateY(-25%);
+
       img {
         right: 25vw;
       }
@@ -120,6 +121,7 @@
     section.right {
       position: relative;
       transform: translateY(-35%);
+
       img {
         right: 25vw;
         min-width: 200px;
@@ -128,6 +130,7 @@
         height: 35vw;
       }
     }
+
     .bkgContainer {
       position: relative;
       .bkgRound {
@@ -137,6 +140,22 @@
         width: 35vw;
         height: 35vw;
         transform: translateY(-250%);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main {
+    section.right {
+      position: relative;
+      transform: translateY(-15%);
+    }
+
+    .bkgContainer {
+      position: relative;
+      .bkgRound {
+        transform: translateY(-210%);
       }
     }
   }

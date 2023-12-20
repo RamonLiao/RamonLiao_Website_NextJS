@@ -7,11 +7,8 @@
 section.table {
   flex: 3 1 600px;
   padding: 1.5rem 5rem;
-  /* height: 100vh;
-  overflow: hidden; */
+
   .container {
-    /* height: 100%;
-    overflow-y: auto; */
     table {
       border-collapse: collapse;
       tr {
@@ -21,6 +18,7 @@ section.table {
         &:first-child {
           border-top: 2px solid gray;
         }
+
         td {
           padding: 1em;
           &:first-child {
@@ -30,10 +28,9 @@ section.table {
             width: 80%;
           }
           ul {
-            /* list-style-position: inside; */
             margin-left: 1em;
             li {
-              margin-bottom: 0.5em;
+              margin-bottom: 1em;
             }
           }
 
@@ -68,6 +65,10 @@ section.table {
           }
 
           &.skillsGroup {
+            ul li {
+              margin-bottom: 1.2em;
+            }
+
             ul li div {
               display: flex;
               flex-direction: row;
@@ -78,19 +79,19 @@ section.table {
                 text-align: center;
                 font-size: 14px;
                 margin: 0.5em 0.5em;
+                min-width: 75px;
               }
+            }
+
+            ul li p {
+              font-weight: 600;
+              margin-bottom: 0.5rem;
             }
           }
 
           ul li span.uniInfo {
             font-style: italic;
             font-size: 14px;
-          }
-
-          &.intsGroup {
-            p {
-              margin-bottom: 1rem;
-            }
           }
         }
 
@@ -170,9 +171,6 @@ section.picture {
 
                   .subListGroup li {
                     text-align: left;
-                    li {
-                      /* margin-bottom: 0.5rem; */
-                    }
                   }
                 }
 
@@ -192,10 +190,12 @@ section.picture {
                     flex-direction: column;
                     li {
                       list-style: none;
-                      /* margin-bottom: 1.5rem; */
-                      p {
+                      margin-top: 0.5rem;
+                      margin-bottom: 1.5rem;
+                      /* p {
                         font-weight: 600;
-                      }
+                        margin-bottom: 0.5rem;
+                      } */
                     }
                   }
                   ul li div {
@@ -203,6 +203,7 @@ section.picture {
                     flex-direction: row;
                     flex-wrap: wrap;
                     align-items: center;
+                    justify-content: center;
                   }
                 }
 
@@ -210,7 +211,6 @@ section.picture {
                 &.langGroup {
                   ul {
                     li {
-                      /* margin-bottom: 1.5rem; */
                       list-style: none;
                     }
                   }
@@ -224,6 +224,9 @@ section.picture {
 
                 &.intsGroup {
                   text-align: center;
+                  p {
+                    margin-bottom: 1rem;
+                  }
                 }
               }
             }

@@ -1,10 +1,9 @@
 import "@/styles/globals.css";
-import { Inter, Poppins } from "next/font/google";
+import { Poppins } from "next/font/google";
 // import Logo from "./components/logo";
 import LogoYCL from "@/components/logo-ycl";
 import NavBar from "./navBar";
 
-const inter = Inter({ subsets: ["latin"] });
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],

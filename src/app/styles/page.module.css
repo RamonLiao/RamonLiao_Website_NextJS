@@ -117,4 +117,16 @@
     height: 35vw;
     transform: translateY(-250%);
   }
+}
+@media screen and (max-width: 400px) {
+  .main section.right {
+    position: relative;
+    transform: translateY(-15%);
+  }
+  .main .bkgContainer {
+    position: relative;
+  }
+  .main .bkgContainer .bkgRound {
+    transform: translateY(-210%);
+  }
 }/*# sourceMappingURL=page.module.css.map */
